@@ -31,7 +31,7 @@ function refreshData(){
         tokenDecimals=decimals;
         document.getElementById('tokenDecimals').textContent=decimals
         tokenContract.methods.balanceOf(addr).call().then(function(bal){
-          document.getElementById('tokenBalance').textContent=parseFloat((bal/(10**decimals)).toFixed(3))
+          document.getElementById('tokenBalance').textContent=parseFloat((bal/(10**decimals)).toFixed(3)).toLocaleString()
         })
         tokenContract.methods.name().call().then(function(name){
           document.getElementById('tokenName').textContent=name;
@@ -168,6 +168,10 @@ function distribute2(){
     tokensToDistribute=web3.utils.toBN(tokensToDistribute).mul(web3.utils.toBN(10**tokenDecimals))//web3.utils.toWei(tokensToDistribute,'ether')
     var text=document.getElementById('relativeShares').value
     var values=processTextValues(text)
+    if(values.addresses.length!=values.amounts.length){
+      alert('mismatch in address/amount counts')
+      return null;
+    }
     console.log('distributing with parameters ',values,tokensToDistribute.toString(),tokenContractAddress)
     airdropContract.methods.airdrop(values.addresses,values.amounts,values.total.toString(),tokensToDistribute.toString(),tokenContractAddress).send({from:address}).then(function(err,result){
       if(DEBUG){console.log('approve')}

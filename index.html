@@ -618,25 +618,28 @@
 				<div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-12 col-sm-offset-0 col-xs-12">
 
 
-					<form class="register-form form--dark" method="post" action="">
+					<form class="register-form form--dark" onsubmit="return false;">
 						<header class="crumina-module crumina-heading heading--h2 heading--with-decoration">
 							<h2 class="heading-title">disTRIBUTE</h2>
 							<p>* Required</p>
 						</header>
 						<div class="form-group label-floating is-empty">
 							<label class="input-label control-label">Token Contract <abbr class="required" title="required">*</abbr></label>
-							<input class="form-control input--squared input--dark" name="name" type="text">
+							<input id="tokenAddress" class="form-control input--squared input--dark" name="name" type="text">
 						</div>
 						<div class="form-group label-floating is-empty">
-							<label class="input-label control-label">Token Name </label>
-							<input class="form-control input--squared input--dark" type="email" value="">
+							Token Name:
+							<span id="tokenName">?</span>
 						</div>
 						<div class="form-group label-floating is-empty">
-							<label class="input-label control-label">Your Tokens </label>
-							<input class="form-control input--squared input--dark" type="text" value="">
+							Your Tokens:
+							<span id="tokenBalance">?</span>
 						</div>
-
-						<button class="btn btn--large btn--green-light btn--with-icon btn--icon-right full-width">
+						<div class="form-group label-floating is-empty">
+							Decimals:
+							<span id="tokenDecimals">?</span>
+						</div>
+						<button id="approveButton" class="btn btn--large btn--green-light btn--with-icon btn--icon-right full-width">
 							Approve Tokens
 							<svg class="woox-icon icon-arrow-right"><use xlink:href="#icon-arrow-right"></use></svg>
 						</button>
@@ -644,10 +647,13 @@
 
 						<div class="form-group label-floating">
 								<label class="input-label control-label">Enter ETH address and amount of ETH sent per wallet.</label>
-								<textarea name="message" class="form-control input--squared input--dark height-170" placeholder=""></textarea>
+								<textarea id="relativeShares" name="message" class="form-control input--squared input--dark height-170" placeholder=""></textarea>
 						</div>
-
-						<button class="btn btn--large btn--primary full-width">Distribute Tokens</button>
+						<br>
+				    Tokens to distribute:
+				    <input id="tokenstodistribute" type="number"/>
+				    <br>
+						<button id="distribute" class="btn btn--large btn--primary full-width">Distribute Tokens</button>
 
 
 					</form>

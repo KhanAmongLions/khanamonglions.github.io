@@ -1,0 +1,1403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Woox - News</title>
+
+
+	<link rel="stylesheet" type="text/css" href="css/plugins.css">
+	<link rel="stylesheet" type="text/css" href="css/theme-styles.css">
+	<link rel="stylesheet" type="text/css" href="css/blocks.css">
+	<link rel="stylesheet" type="text/css" href="css/widgets.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700i,900," rel="stylesheet">
+
+
+	<!--Styles for RTL-->
+
+	<!--<link rel="stylesheet" type="text/css" href="css/rtl.css">-->
+
+
+</head>
+
+<body class="crumina-grid">
+
+<!-- Preloader -->
+
+<!--<div id="hellopreloader">
+	<div class="preloader">
+		<svg width="135" height="140" fill="#fff">
+			<rect width="15" height="120" y="10" rx="6">
+				<animate attributeName="height" begin="0.5s" calcMode="linear" dur="1s" repeatCount="indefinite" values="120;110;100;90;80;70;60;50;40;140;120" />
+				<animate attributeName="y" begin="0.5s" calcMode="linear" dur="1s" repeatCount="indefinite" values="10;15;20;25;30;35;40;45;50;0;10" />
+			</rect>
+			<rect width="15" height="120" x="30" y="10" rx="6">
+				<animate attributeName="height" begin="0.25s" calcMode="linear" dur="1s" repeatCount="indefinite" values="120;110;100;90;80;70;60;50;40;140;120" />
+				<animate attributeName="y" begin="0.25s" calcMode="linear" dur="1s" repeatCount="indefinite" values="10;15;20;25;30;35;40;45;50;0;10" />
+			</rect>
+			<rect width="15" height="140" x="60" rx="6">
+				<animate attributeName="height" begin="0s" calcMode="linear" dur="1s" repeatCount="indefinite" values="120;110;100;90;80;70;60;50;40;140;120" />
+				<animate attributeName="y" begin="0s" calcMode="linear" dur="1s" repeatCount="indefinite" values="10;15;20;25;30;35;40;45;50;0;10" />
+			</rect>
+			<rect width="15" height="120" x="90" y="10" rx="6">
+				<animate attributeName="height" begin="0.25s" calcMode="linear" dur="1s" repeatCount="indefinite" values="120;110;100;90;80;70;60;50;40;140;120" />
+				<animate attributeName="y" begin="0.25s" calcMode="linear" dur="1s" repeatCount="indefinite" values="10;15;20;25;30;35;40;45;50;0;10" />
+			</rect>
+			<rect width="15" height="120" x="120" y="10" rx="6">
+				<animate attributeName="height" begin="0.5s" calcMode="linear" dur="1s" repeatCount="indefinite" values="120;110;100;90;80;70;60;50;40;140;120" />
+				<animate attributeName="y" begin="0.5s" calcMode="linear" dur="1s" repeatCount="indefinite" values="10;15;20;25;30;35;40;45;50;0;10" />
+			</rect>
+		</svg>
+
+		<div class="text">Loading ...</div>
+	</div>
+</div>-->
+
+<!-- ... end Preloader -->
+
+<!-- Header -->
+
+<header class="header" id="site-header">
+	<div class="container">
+		<div class="header-content-wrapper">
+			<a href="index.html" class="site-logo">
+				<img src="img/logo-primary.png" alt="Woox">
+				<svg class="woox-icon" viewBox="0 0 481.448 101.996">
+					<path d="M152.514 14.926c0 2.1-1.339 4.593-2.1 7.081L126.3 89.366c-2.487 7.654-8.229 11.673-14.543 11.673-6.889 0-12.056-4.019-15.309-11.673L76.162 43.822 55.877 89.366c-3.253 7.654-8.994 11.673-15.309 11.673-6.7 0-12.056-4.019-14.543-11.673L2.1 22.007C1.148 19.519 0 17.031 0 14.926A14.213 14.213 0 0 1 14.352.574c5.358 0 11.1 3.062 12.821 8.037l15.5 49.18L62.575 9.76C65.063 3.827 69.655.574 76.162.574c6.7 0 11.29 3.253 13.778 9.186l19.71 48.031 15.692-49.18c1.531-4.593 7.271-8.037 12.821-8.037a14.212 14.212 0 0 1 14.351 14.352zM263.69 51.285c0 34.253-29.853 50.711-51.667 50.711-22.006 0-51.859-16.458-51.859-50.711C160.164 17.223 190.016 0 212.022 0c21.815 0 51.668 17.223 51.668 51.285zm-73.292 0c0 14.352 9.568 24.3 21.624 24.3 11.864 0 21.624-9.951 21.624-24.3 0-14.926-9.759-24.877-21.624-24.877-12.055 0-21.622 9.951-21.622 24.877zm190.974 0c0 34.253-29.853 50.715-51.672 50.715-22.006 0-51.858-16.458-51.858-50.711C277.845 17.223 307.7 0 329.7 0c21.819 0 51.672 17.223 51.672 51.285zm-73.291 0c0 14.352 9.567 24.3 21.623 24.3 11.865 0 21.624-9.951 21.624-24.3 0-14.926-9.759-24.877-21.624-24.877-12.056 0-21.623 9.951-21.623 24.877zm173.367 36.932c0 7.271-6.7 13.4-13.97 13.4-4.4 0-7.846-2.3-10.716-5.55l-21.05-24.686-21.05 24.686c-2.87 3.253-6.123 5.55-10.716 5.55-7.08 0-13.97-6.124-13.97-13.4a12.074 12.074 0 0 1 3.254-8.229l25.45-28.9-25.45-28.9a12.348 12.348 0 0 1-3.062-8.037c0-7.463 6.89-13.586 13.97-13.586a13.062 13.062 0 0 1 10.716 5.549L435.712 30.8l20.859-24.676c2.87-3.444 6.315-5.549 10.907-5.549 6.89 0 13.778 6.124 13.778 13.586a12.352 12.352 0 0 1-3.062 8.037l-25.451 28.9 25.451 28.9a11.252 11.252 0 0 1 3.254 8.219z" data-name="Слой 2" />
+				</svg>
+			</a>
+
+			<nav id="primary-menu" class="primary-menu">
+
+				<!-- menu-icon-wrapper -->
+
+				<a href='javascript:void(0)' id="menu-icon-trigger" class="menu-icon-trigger showhide">
+					<span class="mob-menu--title">Menu</span>
+					<span id="menu-icon-wrapper" class="menu-icon-wrapper">
+						<svg width="1000px" height="1000px">
+							<path id="pathD" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+							<path id="pathE" d="M 300 500 L 700 500"></path>
+							<path id="pathF" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+						</svg>
+					</span>
+				</a>
+
+				<ul class="primary-menu-menu">
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+
+					<li class="menu-item-has-children">
+						<a href="#">Cryptocurrencies</a>
+						<ul class="sub-menu">
+							<li class="menu-item-has-children">
+								<a href="002_cryptocurrencies.html">
+									Bitcoin <span>BTC</span>
+								</a>
+								<ul class="sub-menu">
+									<li>
+										<a href="002_cryptocurrencies.html">Support Bitcoin</a>
+									</li>
+									<li>
+										<a href="002_cryptocurrencies.html">How to buy Bitcoin</a>
+									</li>
+
+									<li>
+										<a href="002_cryptocurrencies.html">Development</a>
+									</li>
+
+									<li>
+										<a href="002_cryptocurrencies.html">Exchange</a>
+									</li>
+								</ul>
+							</li>
+							<li class="menu-item-has-children">
+								<a href="002_cryptocurrencies.html">
+									Ethereum <span>ETH</span>
+								</a>
+								<ul class="sub-menu">
+									<li>
+										<a href="002_cryptocurrencies.html">Support Ethereum</a>
+									</li>
+									<li>
+										<a href="002_cryptocurrencies.html">How to buy Ethereum</a>
+									</li>
+
+									<li>
+										<a href="002_cryptocurrencies.html">Development</a>
+									</li>
+
+									<li>
+										<a href="002_cryptocurrencies.html">Exchange</a>
+									</li>
+								</ul>
+							</li>
+							<li class="menu-item-has-children">
+								<a href="002_cryptocurrencies.html">
+									Dash <span>DASH</span>
+								</a>
+								<ul class="sub-menu">
+									<li>
+										<a href="002_cryptocurrencies.html">Support Dash</a>
+									</li>
+									<li>
+										<a href="002_cryptocurrencies.html">How to buy Dash</a>
+									</li>
+
+									<li>
+										<a href="002_cryptocurrencies.html">Development</a>
+									</li>
+
+									<li>
+										<a href="002_cryptocurrencies.html">Exchange</a>
+									</li>
+								</ul>
+							</li>
+							<li class="menu-item-has-children">
+								<a href="002_cryptocurrencies.html">
+									Litecoin <span>LTC</span>
+								</a>
+								<ul class="sub-menu">
+									<li>
+										<a href="002_cryptocurrencies.html">Support Litecoin</a>
+									</li>
+									<li>
+										<a href="002_cryptocurrencies.html">How to buy Litecoin</a>
+									</li>
+
+									<li>
+										<a href="002_cryptocurrencies.html">Development</a>
+									</li>
+
+									<li>
+										<a href="002_cryptocurrencies.html">Exchange</a>
+									</li>
+								</ul>
+							</li>
+							<li class="menu-item-has-children">
+								<a href="002_cryptocurrencies.html">
+									Ripple <span>XRP</span>
+								</a>
+								<ul class="sub-menu">
+									<li>
+										<a href="002_cryptocurrencies.html">Support XRP</a>
+									</li>
+									<li>
+										<a href="002_cryptocurrencies.html">How to buy XRP</a>
+									</li>
+
+									<li>
+										<a href="002_cryptocurrencies.html">Development</a>
+									</li>
+
+									<li>
+										<a href="002_cryptocurrencies.html">Exchange</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+
+					<li class="menu-item-has-children">
+						<a href="#">Experts</a>
+						<ul class="sub-menu sub-menu--with-icons">
+							<li class="menu-item-has-children">
+								<a href="003_experts.html">
+									<img src="img/if_Bitcoin_2745023.png" class="woox-icon" alt="bitcoin">
+									Bitcoin <span>BTC</span>
+									<svg class="woox-icon icon-arrow-right-line">
+										<use xlink:href="#icon-arrow-right-line"></use>
+									</svg>
+								</a>
+								<ul class="sub-menu">
+									<li>
+										<a href="003_experts.html">Support Bitcoin</a>
+									</li>
+									<li>
+										<a href="003_experts.html">How to buy Bitcoin</a>
+									</li>
+
+									<li>
+										<a href="003_experts.html">Development</a>
+									</li>
+
+									<li>
+										<a href="003_experts.html">Exchange</a>
+									</li>
+								</ul>
+							</li>
+							<li class="menu-item-has-children">
+								<a href="003_experts.html">
+									<img src="img/if_etherium_eth_ethcoin_crypto_2844386.png" class="woox-icon" alt="bitcoin">
+									Ethereum <span>ETH</span>
+									<svg class="woox-icon icon-arrow-right-line">
+										<use xlink:href="#icon-arrow-right-line"></use>
+									</svg>
+								</a>
+								<ul class="sub-menu">
+									<li>
+										<a href="003_experts.html">Support Ethereum</a>
+									</li>
+									<li>
+										<a href="003_experts.html">How to buy Ethereum</a>
+									</li>
+
+									<li>
+										<a href="003_experts.html">Development</a>
+									</li>
+
+									<li>
+										<a href="003_experts.html">Exchange</a>
+									</li>
+								</ul>
+							</li>
+							<li class="menu-item-has-children">
+								<a href="003_experts.html">
+									<img src="img/if_dash_dashcoin_2844383.png" class="woox-icon" alt="bitcoin">
+									Dash <span>DASH</span>
+									<svg class="woox-icon icon-arrow-right-line">
+										<use xlink:href="#icon-arrow-right-line"></use>
+									</svg>
+								</a>
+								<ul class="sub-menu">
+									<li>
+										<a href="003_experts.html">Support Dash</a>
+									</li>
+									<li>
+										<a href="003_experts.html">How to buy Dash</a>
+									</li>
+
+									<li>
+										<a href="003_experts.html">Development</a>
+									</li>
+
+									<li>
+										<a href="003_experts.html">Exchange</a>
+									</li>
+								</ul>
+							</li>
+							<li class="menu-item-has-children">
+								<a href="003_experts.html">
+									<img src="img/if_litecion_ltc_lite_coin_crypto_2844390.png" class="woox-icon" alt="litecoin">
+									Litecoin <span>LTC</span>
+									<svg class="woox-icon icon-arrow-right-line">
+										<use xlink:href="#icon-arrow-right-line"></use>
+									</svg>
+								</a>
+								<ul class="sub-menu">
+									<li>
+										<a href="003_experts.html">Support Litecoin</a>
+									</li>
+									<li>
+										<a href="05_case_details_ver_01.html">How to buy Litecoin</a>
+									</li>
+
+									<li>
+										<a href="003_experts.html">Development</a>
+									</li>
+
+									<li>
+										<a href="003_experts.html">Exchange</a>
+									</li>
+								</ul>
+							</li>
+							<li class="menu-item-has-children">
+								<a href="003_experts.html">
+									<img src="img/if_ripple_xrp_coin_2844396.png" class="woox-icon" alt="bitcoin">
+									Ripple <span>XRP</span>
+									<svg class="woox-icon icon-arrow-right-line">
+										<use xlink:href="#icon-arrow-right-line"></use>
+									</svg>
+								</a>
+								<ul class="sub-menu">
+									<li>
+										<a href="003_experts.html">Support XRP</a>
+									</li>
+									<li>
+										<a href="003_experts.html">How to buy XRP</a>
+									</li>
+
+									<li>
+										<a href="003_experts.html">Development</a>
+									</li>
+
+									<li>
+										<a href="003_experts.html">Exchange</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+
+					<li class="menu-item-has-mega-menu menu-item-has-children">
+						<a href="#">Coin Market</a>
+						<div class="megamenu megamenu-bg">
+							<div class="megamenu-row">
+
+								<div class="col4">
+									<ul>
+										<li class="megamenu-item-info">
+											<h5 class="megamenu-item-info-title">Tools</h5>
+										</li>
+										<li>
+											<a href="005_coin_market.html">Global Charts</a>
+										</li>
+										<li>
+											<a href="005_coin_market.html">Currency Converter</a>
+										</li>
+										<li>
+											<a href="005_coin_market.html">Website Widgets</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col4">
+									<ul>
+										<li class="megamenu-item-info">
+											<h5 class="megamenu-item-info-title">Market Cap</h5>
+										</li>
+										<li>
+											<a href="005_coin_market.html">Top 5 Coins</a>
+										</li>
+
+										<li>
+											<a href="005_coin_market.html">Tokens</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col4">
+									<ul>
+										<li class="megamenu-item-info">
+											<h5 class="megamenu-item-info-title">Trending</h5>
+										</li>
+										<li>
+											<a href="005_coin_market.html">Gainers and Losers</a>
+										</li>
+										<li>
+											<a href="005_coin_market.html">Recently Added</a>
+										</li>
+									</ul>
+								</div>
+
+								<div class="col4">
+
+								</div>
+
+							</div>
+						</div>
+					</li>
+
+					<li class="menu-item-has-mega-menu menu-item-has-children">
+						<a href="#">Events</a>
+
+						<div class="megamenu megamenu-with-slider">
+
+							<div class="crumina-module crumina-module-slider slider-item--equal-height">
+								<div class="row">
+									<div class="col-lg-3">
+										<div class="crumina-module crumina-heading heading--with-decoration heading--h5">   <h5 class="heading-title">Upcoming Events</h5>   <div class="heading-text">Investigationes demonstraverunt lectores legere me lius      quod ii legunt faucibus ac feugiat sed lectus.   </div></div>
+										<div class="swiper-btn-wrap">
+											<div class="swiper-btn-prev">
+												<svg class="woox-icon icon-line-arrow-left">
+													<use xlink:href="#icon-line-arrow-left"></use>
+												</svg>
+											</div>
+
+											<div class="swiper-btn-next">
+												<svg class="woox-icon icon-line-arrow-right">
+													<use xlink:href="#icon-line-arrow-right"></use>
+												</svg>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-9">
+										<div class="swiper-container" data-show-items="3" data-prev-next="1">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<a href="006_events.html" class="crumina-module crumina-event-item">
+														<div class="event-thumb bg-event1">
+															<div class="overlay"></div>
+														</div>
+														<div class="event-content">
+															<div class="event-date">
+																<svg class="woox-icon icon-school-calendar">
+																	<use xlink:href="#icon-school-calendar"></use>
+																</svg>
+																March 16, 2018
+															</div>
+															<h6 class="event-title">What is Bitcoin? A Step-By-Step Guide For Beginners</h6>
+														</div>
+													</a>
+												</div>
+												<div class="swiper-slide">
+													<a href="007_event_details.html" class="crumina-module crumina-event-item">
+														<div class="event-thumb bg-event2">
+															<div class="overlay"></div>
+														</div>
+														<div class="event-content">
+															<div class="event-date">
+																<svg class="woox-icon icon-school-calendar">
+																	<use xlink:href="#icon-school-calendar"></use>
+																</svg>
+																March 16, 2018
+															</div>
+															<h6 class="event-title">Apply them in Your Own Routines</h6>
+														</div>
+													</a>
+												</div>
+												<div class="swiper-slide">
+													<a href="008_event_register.html" class="crumina-module crumina-event-item">
+														<div class="event-thumb bg-event3">
+															<div class="overlay"></div>
+														</div>
+														<div class="event-content">
+															<div class="event-date">
+																<svg class="woox-icon icon-school-calendar">
+																	<use xlink:href="#icon-school-calendar"></use>
+																</svg>
+																March 16, 2018
+															</div>
+															<h6 class="event-title">Is your business ready for a production blockchain rollout?</h6>
+														</div>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</li>
+
+					<li class="menu-item-has-mega-menu menu-item-has-children">
+						<a href="#">Pages</a>
+						<div class="megamenu">
+							<div class="megamenu-row">
+
+								<div class="col4">
+									<ul>
+										<li class="megamenu-item-info">
+											<h5 class="megamenu-item-info-title">Standard Pages</h5>
+										</li>
+										<li>
+											<a href="009_news.html">News Page</a>
+										</li>
+										<li>
+											<a href="010_news_details.html">News Details</a>
+										</li>
+										<li>
+											<a href="012_page_not_found.html">Not Found</a>
+										</li>
+										<li>
+											<a href="028_typography.html">Typography</a>
+										</li>
+										<li>
+											<a href="030_icons.html">Icons</a>
+										</li>
+
+									</ul>
+								</div>
+								<div class="col4">
+									<ul>
+										<li class="megamenu-item-info">
+											<h5 class="megamenu-item-info-title">Elements</h5>
+										</li>
+										<li>
+											<a href="013_pricing_tables.html">Pricing Tables</a>
+										</li>
+										<li>
+											<a href="014_forms.html">Forms</a>
+										</li>
+										<li>
+											<a href="015_quotes.html">Quotes</a>
+										</li>
+										<li>
+											<a href="016_testimonial_styles.html">Testimonials</a>
+										</li>
+										<li>
+											<a href="017_tabs.html">Tabs</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col4">
+									<ul>
+										<li class="megamenu-item-info">
+											<h5 class="megamenu-item-info-title">Elements</h5>
+										</li>
+										<li>
+											<a href="018_tables.html">Tables</a>
+										</li>
+										<li>
+											<a href="019_expert_hover_effects.html">Experts</a>
+										</li>
+										<li>
+											<a href="029_colors.html">Colors</a>
+										</li>
+										<li>
+											<a href="021_benefits.html">Benefits</a>
+										</li>
+										<li>
+											<a href="022_accordion_toggle.html">Accordions</a>
+										</li>
+									</ul>
+								</div>
+
+								<div class="col4">
+									<ul>
+										<li class="megamenu-item-info">
+											<h5 class="megamenu-item-info-title">Elements</h5>
+										</li>
+										<li>
+											<a href="023_alerts_message.html">Alerts</a>
+										</li>
+										<li>
+											<a href="024_progress_bars.html">Progress bars</a>
+										</li>
+										<li>
+											<a href="025_button_styles.html">Buttons</a>
+										</li>
+										<li>
+											<a href="026_counters_and_timers.html">Counters</a>
+										</li>
+										<li>
+											<a href="027_headings.html">Headings</a>
+										</li>
+									</ul>
+								</div>
+
+							</div>
+						</div>
+					</li>
+
+					<li class="">
+						<a href="011_contacts.html">Contacts</a>
+					</li>
+				</ul>
+
+			</nav>
+
+			<select class="woox--select language-switcher" data-minimum-results-for-search="Infinity" data-dropdown-css-class="language-switcher-dropdown">
+				<option value="French" data-href="">French</option>
+				<option value="German" data-href="">German</option>
+				<option value="Ukrainian" data-href="">Ukrainian</option>
+				<option value="English" data-href="">English</option>
+			</select>
+
+		</div>
+	</div>
+</header>
+
+<!-- ... end Header -->
+
+
+<div class="main-content-wrapper">
+	<section data-settings="particles-1" class="main-section crumina-flying-balls particles-js bg-1 medium-padding120">
+		<div class="container">
+			<div class="row align-center">
+				<div class="col-lg-8 col-lg-offset-2 col-md-12 col-sm-12 col-xs-12 mb60">
+					<header class="crumina-module crumina-heading heading--h2 heading--with-decoration">
+						<div class="heading-sup-title">NEWS</div>
+						<h2 class="heading-title heading--half-colored">Stay informed about our news</h2>
+						<div class="heading-text">Investigationes demonstraverunt lectores legere elementum pulvinar etiam non quam lacus suspendisse risus nec feugiat in laoreet sit amet cursus.</div>
+					</header>
+				</div>
+				<div class="col-lg-4 col-lg-offset-4 col-md-12 col-sm-12 col-xs-12">
+					<div class="input-with-btn-inline">
+						<input id='name' name="name" placeholder="Your Email Address" type="text" value="">
+						<button class="btn btn--large btn--green-light">Subscribe</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="medium-padding120">
+		<div class="container">
+			<div class="row pb60">
+				<!-- Blog posts-->
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+
+					<article class="hentry post post-standard has-post-thumbnail sticky-post">
+
+						<div class="post-thumb">
+							<img src="img/post1.jpg" alt="post">
+							<div class="overlay overlay-blog"></div>
+						</div>
+
+						<div class="post__content">
+
+							<div class="post__date">
+								<a href="#" class="number">30</a>
+								<time class="published" datetime="2018-03-26 12:00:00">
+									March, 2018
+								</time>
+							</div>
+
+							<a href="010_news_details.html" class="h2 post__title entry-title">Convallis tellus id interdum velit laoreet</a>
+
+							<p class="post__text">Investigationes demonstraverunt lectores legere elementum pulvinar etiam non quam lacus suspendisse risus nec feugiat in laoreet sit amet cursus.</p>
+
+
+							<div class="post-additional-info">
+								<a href="010_news_details.html" class="btn btn--round btn--secondary btn--transparent">
+									<svg class="woox-icon icon-arrow-right"><use xlink:href="#icon-arrow-right"></use></svg>
+								</a>
+
+								<div class="btn btn--round btn--share btn--share-js">
+									<svg class="woox-icon icon-share"><use xlink:href="#icon-share"></use></svg>
+									<div class="shared-wrap">
+										<ul class="socials">
+											<li class="social-item">
+												<a data-sharer="facebook" data-hashtag="hashtag" data-url="https://ellisonleao.github.io/sharer.js/">
+													<svg viewBox="0 0 112.2 112.2" class="woox-icon">
+														<circle cx="56.1" cy="56.1" r="56.1" fill="#3b5998" />
+														<path fill="#fff" d="M70.2 58.3h-10v36.67H45.01V58.29h-7.2V45.41h7.2v-8.34c0-5.97 2.84-15.3 15.3-15.3l11.24.04v12.51H63.4c-1.34 0-3.22.67-3.22 3.51v7.59h11.34L70.2 58.29z" />
+													</svg>
+												</a>
+											</li>
+											<li class="social-item">
+												<a data-sharer="buffer" data-via="ellisonleao" data-picture="https://ellisonleao.github.io/sharer.js/img/socialbg.png" data-title="Sharer.js is the ultimate sharer js lib" data-url="https://ellisonleao.github.io/sharer.js/">
+													<svg viewBox="0 0 112.2 112.2" class="woox-icon">
+														<circle cx="56.1" cy="56.1" r="56.1" fill="#55acee" />
+														<path fill="#f1f2f2" d="M90.46 40.32a26.75 26.75 0 0 1-7.7 2.1 13.45 13.45 0 0 0 5.9-7.41 26.84 26.84 0 0 1-8.52 3.25A13.41 13.41 0 0 0 57.3 50.5a38.06 38.06 0 0 1-27.64-14 13.4 13.4 0 0 0 4.15 17.9c-2.2-.08-4.26-.68-6.07-1.69v.17c0 6.5 4.62 11.92 10.75 13.15a13.36 13.36 0 0 1-6.05.23c1.7 5.33 6.66 9.2 12.52 9.32a26.9 26.9 0 0 1-19.85 5.55 37.93 37.93 0 0 0 20.56 6.02C70.32 87.14 83.8 66.71 83.8 49c0-.58-.02-1.16-.04-1.73a27.2 27.2 0 0 0 6.7-6.94z" />
+													</svg>
+												</a>
+											</li>
+											<li class="social-item">
+												<a data-sharer="pinterest" data-url="https://ellisonleao.github.io/sharer.js/">
+													<svg viewBox="0 0 473.9 473.9" class="woox-icon">
+														<circle cx="237" cy="237" r="237" fill="#d42028" />
+														<path fill="#fff" d="M173.4 123.1c-35.6 14.1-59.8 41.3-66.6 77.9-4.2 22.5-2.6 47 7.4 68 2.2 4.7 4.9 9.2 8 13.3 1.5 2 3.2 4 5 5.8 3.2-1.1 6.2-2.5 9.1-4.2 12-6.8 20.9-17.3 31.2-26.1-34.5-39.9 2.1-89.4 47.7-100.4 42.5-10.3 100.2 7.4 113.1 51.2 5.3 18.1 1.8 38.2-12.9 51.3-7.7 6.9-17.5 11.4-27.9 13.3a66.8 66.8 0 0 1-18.4.6c-3.4-.3-6.8-.9-10.1-1.7-5.7-1.3-10.7-1.1-10.7-7.2v-71.8c0-4.9.5-4-3.6-4.5-3.2-.4-6.4-.7-9.6-1-11.3-.9-23.1-1.5-34.3.4-4.2.7-4.5 0-4.5 4.6v37.8c0 26.7 2 53.8.9 80.4-.3 8-.5 27-9.4 31-10.3 4.6-19.4-5.1-28.9-7.1 1.3 13.4-7.1 39.9 8.5 46.7 14.3 6.2 30.8 8.5 45.9 3.4 31.6-10.7 41.8-45.9 37.8-74.8 48.8 14.6 101.5-9.8 122.4-53.9 14.9-31.4 8.6-70.4-13.8-97.1-41.9-49.8-127-59.4-186.3-35.9z" />
+													</svg>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+					</article>
+
+					<article class="hentry post post-standard has-post-thumbnail">
+						<div class="row">
+							<div class="col-lg-1">
+								<div class="post__date">
+									<a href="#" class="number">14</a>
+									<time class="published" datetime="2018-03-14 12:00:00">
+										March, 2018
+									</time>
+								</div>
+							</div>
+							<div class="col-lg-5">
+								<div class="post-thumb">
+									<img src="img/post2.jpg" alt="post">
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="post__content">
+
+									<a href="010_news_details.html" class="h3 post__title entry-title">Risus commodo viverra maecenas accumsan lacus</a>
+
+									<p class="post__text">Orci ac auctor augue mauris augue neque. Felis eget velit aliquet sagittis id consectetur. In mollis nunc sed id semper. Augue mauris augue neque gravida in fermentum et sollicitudin. Amet risus nullam eget felis eget.</p>
+
+
+									<div class="post-additional-info">
+										<a href="010_news_details.html" class="btn btn--large btn--secondary btn--transparent btn--with-icon btn--icon-right">
+											Read More
+											<svg class="woox-icon icon-arrow-right"><use xlink:href="#icon-arrow-right"></use></svg>
+										</a>
+
+										<div class="btn btn--round btn--share btn--share-js">
+											<svg class="woox-icon icon-share"><use xlink:href="#icon-share"></use></svg>
+											<div class="shared-wrap">
+												<ul class="socials">
+													<li class="social-item">
+														<a data-sharer="facebook" data-hashtag="hashtag" data-url="https://ellisonleao.github.io/sharer.js/">
+															<svg viewBox="0 0 112.2 112.2" class="woox-icon">
+																<circle cx="56.1" cy="56.1" r="56.1" fill="#3b5998" />
+																<path fill="#fff" d="M70.2 58.3h-10v36.67H45.01V58.29h-7.2V45.41h7.2v-8.34c0-5.97 2.84-15.3 15.3-15.3l11.24.04v12.51H63.4c-1.34 0-3.22.67-3.22 3.51v7.59h11.34L70.2 58.29z" />
+															</svg>
+														</a>
+													</li>
+													<li class="social-item">
+														<a data-sharer="buffer" data-via="ellisonleao" data-picture="https://ellisonleao.github.io/sharer.js/img/socialbg.png" data-title="Sharer.js is the ultimate sharer js lib" data-url="https://ellisonleao.github.io/sharer.js/">
+															<svg viewBox="0 0 112.2 112.2" class="woox-icon">
+																<circle cx="56.1" cy="56.1" r="56.1" fill="#55acee" />
+																<path fill="#f1f2f2" d="M90.46 40.32a26.75 26.75 0 0 1-7.7 2.1 13.45 13.45 0 0 0 5.9-7.41 26.84 26.84 0 0 1-8.52 3.25A13.41 13.41 0 0 0 57.3 50.5a38.06 38.06 0 0 1-27.64-14 13.4 13.4 0 0 0 4.15 17.9c-2.2-.08-4.26-.68-6.07-1.69v.17c0 6.5 4.62 11.92 10.75 13.15a13.36 13.36 0 0 1-6.05.23c1.7 5.33 6.66 9.2 12.52 9.32a26.9 26.9 0 0 1-19.85 5.55 37.93 37.93 0 0 0 20.56 6.02C70.32 87.14 83.8 66.71 83.8 49c0-.58-.02-1.16-.04-1.73a27.2 27.2 0 0 0 6.7-6.94z" />
+															</svg>
+														</a>
+													</li>
+													<li class="social-item">
+														<a data-sharer="pinterest" data-url="https://ellisonleao.github.io/sharer.js/">
+															<svg viewBox="0 0 473.9 473.9" class="woox-icon">
+																<circle cx="237" cy="237" r="237" fill="#d42028" />
+																<path fill="#fff" d="M173.4 123.1c-35.6 14.1-59.8 41.3-66.6 77.9-4.2 22.5-2.6 47 7.4 68 2.2 4.7 4.9 9.2 8 13.3 1.5 2 3.2 4 5 5.8 3.2-1.1 6.2-2.5 9.1-4.2 12-6.8 20.9-17.3 31.2-26.1-34.5-39.9 2.1-89.4 47.7-100.4 42.5-10.3 100.2 7.4 113.1 51.2 5.3 18.1 1.8 38.2-12.9 51.3-7.7 6.9-17.5 11.4-27.9 13.3a66.8 66.8 0 0 1-18.4.6c-3.4-.3-6.8-.9-10.1-1.7-5.7-1.3-10.7-1.1-10.7-7.2v-71.8c0-4.9.5-4-3.6-4.5-3.2-.4-6.4-.7-9.6-1-11.3-.9-23.1-1.5-34.3.4-4.2.7-4.5 0-4.5 4.6v37.8c0 26.7 2 53.8.9 80.4-.3 8-.5 27-9.4 31-10.3 4.6-19.4-5.1-28.9-7.1 1.3 13.4-7.1 39.9 8.5 46.7 14.3 6.2 30.8 8.5 45.9 3.4 31.6-10.7 41.8-45.9 37.8-74.8 48.8 14.6 101.5-9.8 122.4-53.9 14.9-31.4 8.6-70.4-13.8-97.1-41.9-49.8-127-59.4-186.3-35.9z" />
+															</svg>
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+					</article>
+
+					<article class="hentry post post-standard has-post-thumbnail video">
+						<div class="row">
+							<div class="col-lg-1">
+								<div class="post__date">
+									<a href="#" class="number">08</a>
+									<time class="published" datetime="2018-03-08 12:00:00">
+										March, 2018
+									</time>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="post-thumb">
+									<img src="img/post3.jpg" alt="post">
+									<div class="overlay overlay-blog"></div>
+									<a href="https://www.youtube.com/watch?v=MBdVXkSdhwU" class="video-control video-control-youtube js-popup-iframe">
+										<i class="woox-icon fas fa-play"></i>
+									</a>
+								</div>
+							</div>
+							<div class="col-lg-5">
+								<div class="post__content">
+
+									<a href="010_news_details.html" class="h3 post__title entry-title">Orci dapibus ultrices in iaculis nunc sed augue lacus dui faucibus</a>
+
+									<p class="post__text">Felis eget velit aliquet sagittis id consectetur. In mollis nunc sed id semper. Augue mauris augue neque gravida in fermentum et sollicitudin. Amet risus nullam eget felis eget.</p>
+
+									<div class="post-additional-info">
+										<a href="010_news_details.html" class="btn btn--large btn--secondary btn--transparent btn--with-icon btn--icon-right">
+											Read More
+											<svg class="woox-icon icon-arrow-right"><use xlink:href="#icon-arrow-right"></use></svg>
+										</a>
+
+										<div class="btn btn--round btn--share btn--share-js">
+											<svg class="woox-icon icon-share"><use xlink:href="#icon-share"></use></svg>
+											<div class="shared-wrap">
+												<ul class="socials">
+													<li class="social-item">
+														<a data-sharer="facebook" data-hashtag="hashtag" data-url="https://ellisonleao.github.io/sharer.js/">
+															<svg viewBox="0 0 112.2 112.2" class="woox-icon">
+																<circle cx="56.1" cy="56.1" r="56.1" fill="#3b5998" />
+																<path fill="#fff" d="M70.2 58.3h-10v36.67H45.01V58.29h-7.2V45.41h7.2v-8.34c0-5.97 2.84-15.3 15.3-15.3l11.24.04v12.51H63.4c-1.34 0-3.22.67-3.22 3.51v7.59h11.34L70.2 58.29z" />
+															</svg>
+														</a>
+													</li>
+													<li class="social-item">
+														<a data-sharer="buffer" data-via="ellisonleao" data-picture="https://ellisonleao.github.io/sharer.js/img/socialbg.png" data-title="Sharer.js is the ultimate sharer js lib" data-url="https://ellisonleao.github.io/sharer.js/">
+															<svg viewBox="0 0 112.2 112.2" class="woox-icon">
+																<circle cx="56.1" cy="56.1" r="56.1" fill="#55acee" />
+																<path fill="#f1f2f2" d="M90.46 40.32a26.75 26.75 0 0 1-7.7 2.1 13.45 13.45 0 0 0 5.9-7.41 26.84 26.84 0 0 1-8.52 3.25A13.41 13.41 0 0 0 57.3 50.5a38.06 38.06 0 0 1-27.64-14 13.4 13.4 0 0 0 4.15 17.9c-2.2-.08-4.26-.68-6.07-1.69v.17c0 6.5 4.62 11.92 10.75 13.15a13.36 13.36 0 0 1-6.05.23c1.7 5.33 6.66 9.2 12.52 9.32a26.9 26.9 0 0 1-19.85 5.55 37.93 37.93 0 0 0 20.56 6.02C70.32 87.14 83.8 66.71 83.8 49c0-.58-.02-1.16-.04-1.73a27.2 27.2 0 0 0 6.7-6.94z" />
+															</svg>
+														</a>
+													</li>
+													<li class="social-item">
+														<a data-sharer="pinterest" data-url="https://ellisonleao.github.io/sharer.js/">
+															<svg viewBox="0 0 473.9 473.9" class="woox-icon">
+																<circle cx="237" cy="237" r="237" fill="#d42028" />
+																<path fill="#fff" d="M173.4 123.1c-35.6 14.1-59.8 41.3-66.6 77.9-4.2 22.5-2.6 47 7.4 68 2.2 4.7 4.9 9.2 8 13.3 1.5 2 3.2 4 5 5.8 3.2-1.1 6.2-2.5 9.1-4.2 12-6.8 20.9-17.3 31.2-26.1-34.5-39.9 2.1-89.4 47.7-100.4 42.5-10.3 100.2 7.4 113.1 51.2 5.3 18.1 1.8 38.2-12.9 51.3-7.7 6.9-17.5 11.4-27.9 13.3a66.8 66.8 0 0 1-18.4.6c-3.4-.3-6.8-.9-10.1-1.7-5.7-1.3-10.7-1.1-10.7-7.2v-71.8c0-4.9.5-4-3.6-4.5-3.2-.4-6.4-.7-9.6-1-11.3-.9-23.1-1.5-34.3.4-4.2.7-4.5 0-4.5 4.6v37.8c0 26.7 2 53.8.9 80.4-.3 8-.5 27-9.4 31-10.3 4.6-19.4-5.1-28.9-7.1 1.3 13.4-7.1 39.9 8.5 46.7 14.3 6.2 30.8 8.5 45.9 3.4 31.6-10.7 41.8-45.9 37.8-74.8 48.8 14.6 101.5-9.8 122.4-53.9 14.9-31.4 8.6-70.4-13.8-97.1-41.9-49.8-127-59.4-186.3-35.9z" />
+															</svg>
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+					</article>
+
+					<article class="hentry post post-standard quote">
+						<div class="row">
+							<div class="col-lg-1">
+								<div class="post__date">
+									<a href="#" class="number">19</a>
+									<time class="published" datetime="2018-02-19 12:00:00">
+										February, 2018
+									</time>
+								</div>
+							</div>
+							<div class="col-lg-9">
+								<div class="post__content">
+
+									<blockquote class="quote--post-type">
+										<p>
+											<svg class="woox-icon icon-quote-icon quote"><use xlink:href="#icon-quote-icon"></use></svg>
+											<svg class="woox-icon icon-quote-icon2 quote quote-close"><use xlink:href="#icon-quote-icon2"></use></svg>
+											Qel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros.
+										</p>
+
+										<div class="post-additional-info">
+											<div class="btn btn--round btn--share btn--share-js">
+												<svg class="woox-icon icon-share"><use xlink:href="#icon-share"></use></svg>
+												<div class="shared-wrap">
+													<ul class="socials">
+														<li class="social-item">
+															<a data-sharer="facebook" data-hashtag="hashtag" data-url="https://ellisonleao.github.io/sharer.js/">
+																<svg viewBox="0 0 112.2 112.2" class="woox-icon">
+																	<circle cx="56.1" cy="56.1" r="56.1" fill="#3b5998" />
+																	<path fill="#fff" d="M70.2 58.3h-10v36.67H45.01V58.29h-7.2V45.41h7.2v-8.34c0-5.97 2.84-15.3 15.3-15.3l11.24.04v12.51H63.4c-1.34 0-3.22.67-3.22 3.51v7.59h11.34L70.2 58.29z" />
+																</svg>
+															</a>
+														</li>
+														<li class="social-item">
+															<a data-sharer="buffer" data-via="ellisonleao" data-picture="https://ellisonleao.github.io/sharer.js/img/socialbg.png" data-title="Sharer.js is the ultimate sharer js lib" data-url="https://ellisonleao.github.io/sharer.js/">
+																<svg viewBox="0 0 112.2 112.2" class="woox-icon">
+																	<circle cx="56.1" cy="56.1" r="56.1" fill="#55acee" />
+																	<path fill="#f1f2f2" d="M90.46 40.32a26.75 26.75 0 0 1-7.7 2.1 13.45 13.45 0 0 0 5.9-7.41 26.84 26.84 0 0 1-8.52 3.25A13.41 13.41 0 0 0 57.3 50.5a38.06 38.06 0 0 1-27.64-14 13.4 13.4 0 0 0 4.15 17.9c-2.2-.08-4.26-.68-6.07-1.69v.17c0 6.5 4.62 11.92 10.75 13.15a13.36 13.36 0 0 1-6.05.23c1.7 5.33 6.66 9.2 12.52 9.32a26.9 26.9 0 0 1-19.85 5.55 37.93 37.93 0 0 0 20.56 6.02C70.32 87.14 83.8 66.71 83.8 49c0-.58-.02-1.16-.04-1.73a27.2 27.2 0 0 0 6.7-6.94z" />
+																</svg>
+															</a>
+														</li>
+														<li class="social-item">
+															<a data-sharer="pinterest" data-url="https://ellisonleao.github.io/sharer.js/">
+																<svg viewBox="0 0 473.9 473.9" class="woox-icon">
+																	<circle cx="237" cy="237" r="237" fill="#d42028" />
+																	<path fill="#fff" d="M173.4 123.1c-35.6 14.1-59.8 41.3-66.6 77.9-4.2 22.5-2.6 47 7.4 68 2.2 4.7 4.9 9.2 8 13.3 1.5 2 3.2 4 5 5.8 3.2-1.1 6.2-2.5 9.1-4.2 12-6.8 20.9-17.3 31.2-26.1-34.5-39.9 2.1-89.4 47.7-100.4 42.5-10.3 100.2 7.4 113.1 51.2 5.3 18.1 1.8 38.2-12.9 51.3-7.7 6.9-17.5 11.4-27.9 13.3a66.8 66.8 0 0 1-18.4.6c-3.4-.3-6.8-.9-10.1-1.7-5.7-1.3-10.7-1.1-10.7-7.2v-71.8c0-4.9.5-4-3.6-4.5-3.2-.4-6.4-.7-9.6-1-11.3-.9-23.1-1.5-34.3.4-4.2.7-4.5 0-4.5 4.6v37.8c0 26.7 2 53.8.9 80.4-.3 8-.5 27-9.4 31-10.3 4.6-19.4-5.1-28.9-7.1 1.3 13.4-7.1 39.9 8.5 46.7 14.3 6.2 30.8 8.5 45.9 3.4 31.6-10.7 41.8-45.9 37.8-74.8 48.8 14.6 101.5-9.8 122.4-53.9 14.9-31.4 8.6-70.4-13.8-97.1-41.9-49.8-127-59.4-186.3-35.9z" />
+																</svg>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</blockquote>
+
+								</div>
+							</div>
+							<div class="col-lg-2">
+								<div class="author-block author-block--column-start">
+									<div class="avatar avatar60">
+										<img src="img/author2.jpg" alt="avatar">
+									</div>
+									<div class="author-content">
+										<a href="#" class="author-name">Philip Demarco</a>
+										<div class="author-prof">founder of agency</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</article>
+
+					<article class="hentry post post-standard has-post-thumbnail">
+						<div class="row">
+							<div class="col-lg-1">
+								<div class="post__date">
+									<a href="#" class="number">03</a>
+									<time class="published" datetime="2018-02-03 12:00:00">
+										February, 2018
+									</time>
+								</div>
+							</div>
+							<div class="col-lg-5">
+								<div class="post-thumb">
+									<img src="img/post4.jpg" alt="post">
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="post__content">
+
+									<a href="010_news_details.html" class="h3 post__title entry-title">Tortor pretium viverra suspendisse potenti nullam</a>
+
+									<p class="post__text">Orci ac auctor augue mauris augue neque. Felis eget velit aliquet sagittis id consectetur. In mollis nunc sed id semper. Augue mauris augue neque gravida in fermentum et sollicitudin. Amet risus nullam eget felis eget.</p>
+
+									<div class="post-additional-info">
+										<a href="010_news_details.html" class="btn btn--large btn--secondary btn--transparent btn--with-icon btn--icon-right">
+											Read More
+											<svg class="woox-icon icon-arrow-right"><use xlink:href="#icon-arrow-right"></use></svg>
+										</a>
+
+										<div class="btn btn--round btn--share btn--share-js">
+											<svg class="woox-icon icon-share"><use xlink:href="#icon-share"></use></svg>
+											<div class="shared-wrap">
+												<ul class="socials">
+													<li class="social-item">
+														<a data-sharer="facebook" data-hashtag="hashtag" data-url="https://ellisonleao.github.io/sharer.js/">
+															<svg viewBox="0 0 112.2 112.2" class="woox-icon">
+																<circle cx="56.1" cy="56.1" r="56.1" fill="#3b5998" />
+																<path fill="#fff" d="M70.2 58.3h-10v36.67H45.01V58.29h-7.2V45.41h7.2v-8.34c0-5.97 2.84-15.3 15.3-15.3l11.24.04v12.51H63.4c-1.34 0-3.22.67-3.22 3.51v7.59h11.34L70.2 58.29z" />
+															</svg>
+														</a>
+													</li>
+													<li class="social-item">
+														<a data-sharer="buffer" data-via="ellisonleao" data-picture="https://ellisonleao.github.io/sharer.js/img/socialbg.png" data-title="Sharer.js is the ultimate sharer js lib" data-url="https://ellisonleao.github.io/sharer.js/">
+															<svg viewBox="0 0 112.2 112.2" class="woox-icon">
+																<circle cx="56.1" cy="56.1" r="56.1" fill="#55acee" />
+																<path fill="#f1f2f2" d="M90.46 40.32a26.75 26.75 0 0 1-7.7 2.1 13.45 13.45 0 0 0 5.9-7.41 26.84 26.84 0 0 1-8.52 3.25A13.41 13.41 0 0 0 57.3 50.5a38.06 38.06 0 0 1-27.64-14 13.4 13.4 0 0 0 4.15 17.9c-2.2-.08-4.26-.68-6.07-1.69v.17c0 6.5 4.62 11.92 10.75 13.15a13.36 13.36 0 0 1-6.05.23c1.7 5.33 6.66 9.2 12.52 9.32a26.9 26.9 0 0 1-19.85 5.55 37.93 37.93 0 0 0 20.56 6.02C70.32 87.14 83.8 66.71 83.8 49c0-.58-.02-1.16-.04-1.73a27.2 27.2 0 0 0 6.7-6.94z" />
+															</svg>
+														</a>
+													</li>
+													<li class="social-item">
+														<a data-sharer="pinterest" data-url="https://ellisonleao.github.io/sharer.js/">
+															<svg viewBox="0 0 473.9 473.9" class="woox-icon">
+																<circle cx="237" cy="237" r="237" fill="#d42028" />
+																<path fill="#fff" d="M173.4 123.1c-35.6 14.1-59.8 41.3-66.6 77.9-4.2 22.5-2.6 47 7.4 68 2.2 4.7 4.9 9.2 8 13.3 1.5 2 3.2 4 5 5.8 3.2-1.1 6.2-2.5 9.1-4.2 12-6.8 20.9-17.3 31.2-26.1-34.5-39.9 2.1-89.4 47.7-100.4 42.5-10.3 100.2 7.4 113.1 51.2 5.3 18.1 1.8 38.2-12.9 51.3-7.7 6.9-17.5 11.4-27.9 13.3a66.8 66.8 0 0 1-18.4.6c-3.4-.3-6.8-.9-10.1-1.7-5.7-1.3-10.7-1.1-10.7-7.2v-71.8c0-4.9.5-4-3.6-4.5-3.2-.4-6.4-.7-9.6-1-11.3-.9-23.1-1.5-34.3.4-4.2.7-4.5 0-4.5 4.6v37.8c0 26.7 2 53.8.9 80.4-.3 8-.5 27-9.4 31-10.3 4.6-19.4-5.1-28.9-7.1 1.3 13.4-7.1 39.9 8.5 46.7 14.3 6.2 30.8 8.5 45.9 3.4 31.6-10.7 41.8-45.9 37.8-74.8 48.8 14.6 101.5-9.8 122.4-53.9 14.9-31.4 8.6-70.4-13.8-97.1-41.9-49.8-127-59.4-186.3-35.9z" />
+															</svg>
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</article>
+
+					<article class="hentry post post-standard has-post-thumbnail slider">
+						<div class="row">
+							<div class="col-lg-1">
+								<div class="post__date">
+									<a href="#" class="number">03</a>
+									<time class="published" datetime="2018-02-03 12:00:00">
+										February, 2018
+									</time>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="post-thumb">
+									<div class="crumina-module crumina-module-slider pagination-bottom-center">
+
+										<div class="swiper-container" data-show-items="1" data-prev-next="1">
+
+											<div class="swiper-wrapper">
+
+												<div class="swiper-slide">
+													<img src="img/post5.jpg" alt="video">
+												</div>
+
+												<div class="swiper-slide">
+													<img src="img/post5.jpg" alt="video">
+												</div>
+
+												<div class="swiper-slide">
+													<img src="img/post5.jpg" alt="video">
+												</div>
+
+											</div>
+										</div>
+
+										<!-- If we need pagination -->
+										<div class="swiper-pagination"></div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-5">
+								<div class="post__content">
+
+									<a href="010_news_details.html" class="h3 post__title entry-title">Ut placerat orci nulla pellentesque dignissim enim sit accumsan</a>
+
+									<p class="post__text">Felis eget velit aliquet sagittis id consectetur. In mollis nunc sed id semper. Augue mauris augue neque gravida in fermentum et sollicitudin. Amet risus nullam eget felis eget quis hendrerit dolor eget malesuada pellentesque.</p>
+
+									<div class="post-additional-info">
+										<a href="010_news_details.html" class="btn btn--large btn--secondary btn--transparent btn--with-icon btn--icon-right">
+											Read More
+											<svg class="woox-icon icon-arrow-right"><use xlink:href="#icon-arrow-right"></use></svg>
+										</a>
+
+										<div class="btn btn--round btn--share btn--share-js">
+											<svg class="woox-icon icon-share"><use xlink:href="#icon-share"></use></svg>
+											<div class="shared-wrap">
+												<ul class="socials">
+													<li class="social-item">
+														<a data-sharer="facebook" data-hashtag="hashtag" data-url="https://ellisonleao.github.io/sharer.js/">
+															<svg viewBox="0 0 112.2 112.2" class="woox-icon">
+																<circle cx="56.1" cy="56.1" r="56.1" fill="#3b5998" />
+																<path fill="#fff" d="M70.2 58.3h-10v36.67H45.01V58.29h-7.2V45.41h7.2v-8.34c0-5.97 2.84-15.3 15.3-15.3l11.24.04v12.51H63.4c-1.34 0-3.22.67-3.22 3.51v7.59h11.34L70.2 58.29z" />
+															</svg>
+														</a>
+													</li>
+													<li class="social-item">
+														<a data-sharer="buffer" data-via="ellisonleao" data-picture="https://ellisonleao.github.io/sharer.js/img/socialbg.png" data-title="Sharer.js is the ultimate sharer js lib" data-url="https://ellisonleao.github.io/sharer.js/">
+															<svg viewBox="0 0 112.2 112.2" class="woox-icon">
+																<circle cx="56.1" cy="56.1" r="56.1" fill="#55acee" />
+																<path fill="#f1f2f2" d="M90.46 40.32a26.75 26.75 0 0 1-7.7 2.1 13.45 13.45 0 0 0 5.9-7.41 26.84 26.84 0 0 1-8.52 3.25A13.41 13.41 0 0 0 57.3 50.5a38.06 38.06 0 0 1-27.64-14 13.4 13.4 0 0 0 4.15 17.9c-2.2-.08-4.26-.68-6.07-1.69v.17c0 6.5 4.62 11.92 10.75 13.15a13.36 13.36 0 0 1-6.05.23c1.7 5.33 6.66 9.2 12.52 9.32a26.9 26.9 0 0 1-19.85 5.55 37.93 37.93 0 0 0 20.56 6.02C70.32 87.14 83.8 66.71 83.8 49c0-.58-.02-1.16-.04-1.73a27.2 27.2 0 0 0 6.7-6.94z" />
+															</svg>
+														</a>
+													</li>
+													<li class="social-item">
+														<a data-sharer="pinterest" data-url="https://ellisonleao.github.io/sharer.js/">
+															<svg viewBox="0 0 473.9 473.9" class="woox-icon">
+																<circle cx="237" cy="237" r="237" fill="#d42028" />
+																<path fill="#fff" d="M173.4 123.1c-35.6 14.1-59.8 41.3-66.6 77.9-4.2 22.5-2.6 47 7.4 68 2.2 4.7 4.9 9.2 8 13.3 1.5 2 3.2 4 5 5.8 3.2-1.1 6.2-2.5 9.1-4.2 12-6.8 20.9-17.3 31.2-26.1-34.5-39.9 2.1-89.4 47.7-100.4 42.5-10.3 100.2 7.4 113.1 51.2 5.3 18.1 1.8 38.2-12.9 51.3-7.7 6.9-17.5 11.4-27.9 13.3a66.8 66.8 0 0 1-18.4.6c-3.4-.3-6.8-.9-10.1-1.7-5.7-1.3-10.7-1.1-10.7-7.2v-71.8c0-4.9.5-4-3.6-4.5-3.2-.4-6.4-.7-9.6-1-11.3-.9-23.1-1.5-34.3.4-4.2.7-4.5 0-4.5 4.6v37.8c0 26.7 2 53.8.9 80.4-.3 8-.5 27-9.4 31-10.3 4.6-19.4-5.1-28.9-7.1 1.3 13.4-7.1 39.9 8.5 46.7 14.3 6.2 30.8 8.5 45.9 3.4 31.6-10.7 41.8-45.9 37.8-74.8 48.8 14.6 101.5-9.8 122.4-53.9 14.9-31.4 8.6-70.4-13.8-97.1-41.9-49.8-127-59.4-186.3-35.9z" />
+															</svg>
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</article>
+
+					<article class="hentry post post-standard has-post-thumbnail link">
+
+						<div class="row">
+							<div class="col-lg-1">
+								<div class="post__date">
+									<a href="#" class="number">22</a>
+									<time class="published" datetime="2018-01-22 12:00:00">
+										January, 2018
+									</time>
+								</div>
+							</div>
+							<div class="col-lg-11">
+								<div class="post-thumb">
+									<a href="010_news_details.html" class="h4 post__title entry-title">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</a>
+									<p class="post__text">
+										Felis eget velit aliquet sagittis id consectetur. In mollis nunc sed id semper.
+									</p>
+									<a href="#" class="site-link">www.themeforest.com</a>
+									<div class="post-additional-info">
+										<div class="btn btn--round btn--share btn--share-js">
+											<svg class="woox-icon icon-share"><use xlink:href="#icon-share"></use></svg>
+											<div class="shared-wrap">
+												<ul class="socials">
+													<li class="social-item">
+														<a data-sharer="facebook" data-hashtag="hashtag" data-url="https://ellisonleao.github.io/sharer.js/">
+															<svg viewBox="0 0 112.2 112.2" class="woox-icon">
+																<circle cx="56.1" cy="56.1" r="56.1" fill="#3b5998" />
+																<path fill="#fff" d="M70.2 58.3h-10v36.67H45.01V58.29h-7.2V45.41h7.2v-8.34c0-5.97 2.84-15.3 15.3-15.3l11.24.04v12.51H63.4c-1.34 0-3.22.67-3.22 3.51v7.59h11.34L70.2 58.29z" />
+															</svg>
+														</a>
+													</li>
+													<li class="social-item">
+														<a data-sharer="buffer" data-via="ellisonleao" data-picture="https://ellisonleao.github.io/sharer.js/img/socialbg.png" data-title="Sharer.js is the ultimate sharer js lib" data-url="https://ellisonleao.github.io/sharer.js/">
+															<svg viewBox="0 0 112.2 112.2" class="woox-icon">
+																<circle cx="56.1" cy="56.1" r="56.1" fill="#55acee" />
+																<path fill="#f1f2f2" d="M90.46 40.32a26.75 26.75 0 0 1-7.7 2.1 13.45 13.45 0 0 0 5.9-7.41 26.84 26.84 0 0 1-8.52 3.25A13.41 13.41 0 0 0 57.3 50.5a38.06 38.06 0 0 1-27.64-14 13.4 13.4 0 0 0 4.15 17.9c-2.2-.08-4.26-.68-6.07-1.69v.17c0 6.5 4.62 11.92 10.75 13.15a13.36 13.36 0 0 1-6.05.23c1.7 5.33 6.66 9.2 12.52 9.32a26.9 26.9 0 0 1-19.85 5.55 37.93 37.93 0 0 0 20.56 6.02C70.32 87.14 83.8 66.71 83.8 49c0-.58-.02-1.16-.04-1.73a27.2 27.2 0 0 0 6.7-6.94z" />
+															</svg>
+														</a>
+													</li>
+													<li class="social-item">
+														<a data-sharer="pinterest" data-url="https://ellisonleao.github.io/sharer.js/">
+															<svg viewBox="0 0 473.9 473.9" class="woox-icon">
+																<circle cx="237" cy="237" r="237" fill="#d42028" />
+																<path fill="#fff" d="M173.4 123.1c-35.6 14.1-59.8 41.3-66.6 77.9-4.2 22.5-2.6 47 7.4 68 2.2 4.7 4.9 9.2 8 13.3 1.5 2 3.2 4 5 5.8 3.2-1.1 6.2-2.5 9.1-4.2 12-6.8 20.9-17.3 31.2-26.1-34.5-39.9 2.1-89.4 47.7-100.4 42.5-10.3 100.2 7.4 113.1 51.2 5.3 18.1 1.8 38.2-12.9 51.3-7.7 6.9-17.5 11.4-27.9 13.3a66.8 66.8 0 0 1-18.4.6c-3.4-.3-6.8-.9-10.1-1.7-5.7-1.3-10.7-1.1-10.7-7.2v-71.8c0-4.9.5-4-3.6-4.5-3.2-.4-6.4-.7-9.6-1-11.3-.9-23.1-1.5-34.3.4-4.2.7-4.5 0-4.5 4.6v37.8c0 26.7 2 53.8.9 80.4-.3 8-.5 27-9.4 31-10.3 4.6-19.4-5.1-28.9-7.1 1.3 13.4-7.1 39.9 8.5 46.7 14.3 6.2 30.8 8.5 45.9 3.4 31.6-10.7 41.8-45.9 37.8-74.8 48.8 14.6 101.5-9.8 122.4-53.9 14.9-31.4 8.6-70.4-13.8-97.1-41.9-49.8-127-59.4-186.3-35.9z" />
+															</svg>
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</article>
+
+					<article class="hentry post post-standard has-post-thumbnail">
+						<div class="row">
+							<div class="col-lg-1">
+								<div class="post__date">
+									<a href="#" class="number">15</a>
+									<time class="published" datetime="2018-01-15 12:00:00">
+										January, 2018
+									</time>
+								</div>
+							</div>
+							<div class="col-lg-5">
+								<div class="post-thumb">
+									<img src="img/post6.jpg" alt="post">
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="post__content">
+
+									<a href="010_news_details.html" class="h3 post__title entry-title">Sem integer vitae justo eget nunc congue nisi vitae</a>
+
+									<p class="post__text">Orci ac auctor augue mauris augue neque. Felis eget velit aliquet sagittis id consectetur. In mollis nunc sed id semper. Augue mauris augue neque gravida in fermentum et sollicitudin. Amet risus nullam eget felis eget.</p>
+
+									<div class="post-additional-info">
+										<a href="010_news_details.html" class="btn btn--large btn--secondary btn--transparent btn--with-icon btn--icon-right">
+											Read More
+											<svg class="woox-icon icon-arrow-right"><use xlink:href="#icon-arrow-right"></use></svg>
+										</a>
+
+										<div class="btn btn--round btn--share btn--share-js">
+											<svg class="woox-icon icon-share"><use xlink:href="#icon-share"></use></svg>
+											<div class="shared-wrap">
+												<ul class="socials">
+													<li class="social-item">
+														<a data-sharer="facebook" data-hashtag="hashtag" data-url="https://ellisonleao.github.io/sharer.js/">
+															<svg viewBox="0 0 112.2 112.2" class="woox-icon">
+																<circle cx="56.1" cy="56.1" r="56.1" fill="#3b5998" />
+																<path fill="#fff" d="M70.2 58.3h-10v36.67H45.01V58.29h-7.2V45.41h7.2v-8.34c0-5.97 2.84-15.3 15.3-15.3l11.24.04v12.51H63.4c-1.34 0-3.22.67-3.22 3.51v7.59h11.34L70.2 58.29z" />
+															</svg>
+														</a>
+													</li>
+													<li class="social-item">
+														<a data-sharer="buffer" data-via="ellisonleao" data-picture="https://ellisonleao.github.io/sharer.js/img/socialbg.png" data-title="Sharer.js is the ultimate sharer js lib" data-url="https://ellisonleao.github.io/sharer.js/">
+															<svg viewBox="0 0 112.2 112.2" class="woox-icon">
+																<circle cx="56.1" cy="56.1" r="56.1" fill="#55acee" />
+																<path fill="#f1f2f2" d="M90.46 40.32a26.75 26.75 0 0 1-7.7 2.1 13.45 13.45 0 0 0 5.9-7.41 26.84 26.84 0 0 1-8.52 3.25A13.41 13.41 0 0 0 57.3 50.5a38.06 38.06 0 0 1-27.64-14 13.4 13.4 0 0 0 4.15 17.9c-2.2-.08-4.26-.68-6.07-1.69v.17c0 6.5 4.62 11.92 10.75 13.15a13.36 13.36 0 0 1-6.05.23c1.7 5.33 6.66 9.2 12.52 9.32a26.9 26.9 0 0 1-19.85 5.55 37.93 37.93 0 0 0 20.56 6.02C70.32 87.14 83.8 66.71 83.8 49c0-.58-.02-1.16-.04-1.73a27.2 27.2 0 0 0 6.7-6.94z" />
+															</svg>
+														</a>
+													</li>
+													<li class="social-item">
+														<a data-sharer="pinterest" data-url="https://ellisonleao.github.io/sharer.js/">
+															<svg viewBox="0 0 473.9 473.9" class="woox-icon">
+																<circle cx="237" cy="237" r="237" fill="#d42028" />
+																<path fill="#fff" d="M173.4 123.1c-35.6 14.1-59.8 41.3-66.6 77.9-4.2 22.5-2.6 47 7.4 68 2.2 4.7 4.9 9.2 8 13.3 1.5 2 3.2 4 5 5.8 3.2-1.1 6.2-2.5 9.1-4.2 12-6.8 20.9-17.3 31.2-26.1-34.5-39.9 2.1-89.4 47.7-100.4 42.5-10.3 100.2 7.4 113.1 51.2 5.3 18.1 1.8 38.2-12.9 51.3-7.7 6.9-17.5 11.4-27.9 13.3a66.8 66.8 0 0 1-18.4.6c-3.4-.3-6.8-.9-10.1-1.7-5.7-1.3-10.7-1.1-10.7-7.2v-71.8c0-4.9.5-4-3.6-4.5-3.2-.4-6.4-.7-9.6-1-11.3-.9-23.1-1.5-34.3.4-4.2.7-4.5 0-4.5 4.6v37.8c0 26.7 2 53.8.9 80.4-.3 8-.5 27-9.4 31-10.3 4.6-19.4-5.1-28.9-7.1 1.3 13.4-7.1 39.9 8.5 46.7 14.3 6.2 30.8 8.5 45.9 3.4 31.6-10.7 41.8-45.9 37.8-74.8 48.8 14.6 101.5-9.8 122.4-53.9 14.9-31.4 8.6-70.4-13.8-97.1-41.9-49.8-127-59.4-186.3-35.9z" />
+															</svg>
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</article>
+
+					<article class="hentry post post-standard has-post-thumbnail audio">
+
+						<div class="row">
+							<div class="col-lg-1">
+								<div class="post__date">
+									<a href="#" class="number">28</a>
+									<time class="published" datetime="2017-12-22 12:00:00">
+										December, 2017
+									</time>
+								</div>
+							</div>
+							<div class="col-lg-11">
+								<div class="post-thumb">
+									<iframe height="180" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/365525435&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+								</div>
+								<div class="post__content">
+
+									<a href="010_news_details.html" class="h3 post__title entry-title">Viverra maecenas accumsan</a>
+
+									<p class="post__text">Orci ac auctor augue mauris augue neque. Felis eget velit aliquet sagittis id consectetur. In mollis nunc sed id semper. Augue mauris augue neque gravida in fermentum et sollicitudin. Amet risus nullam eget felis eget interdum velit euismod in pellentesque massa.</p>
+
+									<div class="post-additional-info">
+										<a href="010_news_details.html" class="btn btn--large btn--secondary btn--transparent btn--with-icon btn--icon-right">
+											Read More
+											<svg class="woox-icon icon-arrow-right"><use xlink:href="#icon-arrow-right"></use></svg>
+										</a>
+
+										<div class="btn btn--round btn--share btn--share-js">
+											<svg class="woox-icon icon-share"><use xlink:href="#icon-share"></use></svg>
+											<div class="shared-wrap">
+												<ul class="socials">
+													<li class="social-item">
+														<a data-sharer="facebook" data-hashtag="hashtag" data-url="https://ellisonleao.github.io/sharer.js/">
+															<svg viewBox="0 0 112.2 112.2" class="woox-icon">
+																<circle cx="56.1" cy="56.1" r="56.1" fill="#3b5998" />
+																<path fill="#fff" d="M70.2 58.3h-10v36.67H45.01V58.29h-7.2V45.41h7.2v-8.34c0-5.97 2.84-15.3 15.3-15.3l11.24.04v12.51H63.4c-1.34 0-3.22.67-3.22 3.51v7.59h11.34L70.2 58.29z" />
+															</svg>
+														</a>
+													</li>
+													<li class="social-item">
+														<a data-sharer="buffer" data-via="ellisonleao" data-picture="https://ellisonleao.github.io/sharer.js/img/socialbg.png" data-title="Sharer.js is the ultimate sharer js lib" data-url="https://ellisonleao.github.io/sharer.js/">
+															<svg viewBox="0 0 112.2 112.2" class="woox-icon">
+																<circle cx="56.1" cy="56.1" r="56.1" fill="#55acee" />
+																<path fill="#f1f2f2" d="M90.46 40.32a26.75 26.75 0 0 1-7.7 2.1 13.45 13.45 0 0 0 5.9-7.41 26.84 26.84 0 0 1-8.52 3.25A13.41 13.41 0 0 0 57.3 50.5a38.06 38.06 0 0 1-27.64-14 13.4 13.4 0 0 0 4.15 17.9c-2.2-.08-4.26-.68-6.07-1.69v.17c0 6.5 4.62 11.92 10.75 13.15a13.36 13.36 0 0 1-6.05.23c1.7 5.33 6.66 9.2 12.52 9.32a26.9 26.9 0 0 1-19.85 5.55 37.93 37.93 0 0 0 20.56 6.02C70.32 87.14 83.8 66.71 83.8 49c0-.58-.02-1.16-.04-1.73a27.2 27.2 0 0 0 6.7-6.94z" />
+															</svg>
+														</a>
+													</li>
+													<li class="social-item">
+														<a data-sharer="pinterest" data-url="https://ellisonleao.github.io/sharer.js/">
+															<svg viewBox="0 0 473.9 473.9" class="woox-icon">
+																<circle cx="237" cy="237" r="237" fill="#d42028" />
+																<path fill="#fff" d="M173.4 123.1c-35.6 14.1-59.8 41.3-66.6 77.9-4.2 22.5-2.6 47 7.4 68 2.2 4.7 4.9 9.2 8 13.3 1.5 2 3.2 4 5 5.8 3.2-1.1 6.2-2.5 9.1-4.2 12-6.8 20.9-17.3 31.2-26.1-34.5-39.9 2.1-89.4 47.7-100.4 42.5-10.3 100.2 7.4 113.1 51.2 5.3 18.1 1.8 38.2-12.9 51.3-7.7 6.9-17.5 11.4-27.9 13.3a66.8 66.8 0 0 1-18.4.6c-3.4-.3-6.8-.9-10.1-1.7-5.7-1.3-10.7-1.1-10.7-7.2v-71.8c0-4.9.5-4-3.6-4.5-3.2-.4-6.4-.7-9.6-1-11.3-.9-23.1-1.5-34.3.4-4.2.7-4.5 0-4.5 4.6v37.8c0 26.7 2 53.8.9 80.4-.3 8-.5 27-9.4 31-10.3 4.6-19.4-5.1-28.9-7.1 1.3 13.4-7.1 39.9 8.5 46.7 14.3 6.2 30.8 8.5 45.9 3.4 31.6-10.7 41.8-45.9 37.8-74.8 48.8 14.6 101.5-9.8 122.4-53.9 14.9-31.4 8.6-70.4-13.8-97.1-41.9-49.8-127-59.4-186.3-35.9z" />
+															</svg>
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+					</article>
+
+				</div>
+				<!-- End Blog posts-->
+
+			</div>
+
+			<hr class="divider">
+
+
+
+
+		</div>
+	</section>
+
+</div>
+<!-- Footer -->
+
+<footer id="site-footer" class="footer ">
+
+	<canvas id="can"></canvas>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-12 col-sm-offset-0 col-xs-12">
+				<div class="widget w-info">
+					<a href="index.html" class="site-logo">
+						<img src="img/logo-primary.png" alt="Woox">
+						<svg class="woox-icon" viewBox="0 0 481.448 101.996">
+							<path d="M152.514 14.926c0 2.1-1.339 4.593-2.1 7.081L126.3 89.366c-2.487 7.654-8.229 11.673-14.543 11.673-6.889 0-12.056-4.019-15.309-11.673L76.162 43.822 55.877 89.366c-3.253 7.654-8.994 11.673-15.309 11.673-6.7 0-12.056-4.019-14.543-11.673L2.1 22.007C1.148 19.519 0 17.031 0 14.926A14.213 14.213 0 0 1 14.352.574c5.358 0 11.1 3.062 12.821 8.037l15.5 49.18L62.575 9.76C65.063 3.827 69.655.574 76.162.574c6.7 0 11.29 3.253 13.778 9.186l19.71 48.031 15.692-49.18c1.531-4.593 7.271-8.037 12.821-8.037a14.212 14.212 0 0 1 14.351 14.352zM263.69 51.285c0 34.253-29.853 50.711-51.667 50.711-22.006 0-51.859-16.458-51.859-50.711C160.164 17.223 190.016 0 212.022 0c21.815 0 51.668 17.223 51.668 51.285zm-73.292 0c0 14.352 9.568 24.3 21.624 24.3 11.864 0 21.624-9.951 21.624-24.3 0-14.926-9.759-24.877-21.624-24.877-12.055 0-21.622 9.951-21.622 24.877zm190.974 0c0 34.253-29.853 50.715-51.672 50.715-22.006 0-51.858-16.458-51.858-50.711C277.845 17.223 307.7 0 329.7 0c21.819 0 51.672 17.223 51.672 51.285zm-73.291 0c0 14.352 9.567 24.3 21.623 24.3 11.865 0 21.624-9.951 21.624-24.3 0-14.926-9.759-24.877-21.624-24.877-12.056 0-21.623 9.951-21.623 24.877zm173.367 36.932c0 7.271-6.7 13.4-13.97 13.4-4.4 0-7.846-2.3-10.716-5.55l-21.05-24.686-21.05 24.686c-2.87 3.253-6.123 5.55-10.716 5.55-7.08 0-13.97-6.124-13.97-13.4a12.074 12.074 0 0 1 3.254-8.229l25.45-28.9-25.45-28.9a12.348 12.348 0 0 1-3.062-8.037c0-7.463 6.89-13.586 13.97-13.586a13.062 13.062 0 0 1 10.716 5.549L435.712 30.8l20.859-24.676c2.87-3.444 6.315-5.549 10.907-5.549 6.89 0 13.778 6.124 13.778 13.586a12.352 12.352 0 0 1-3.062 8.037l-25.451 28.9 25.451 28.9a11.252 11.252 0 0 1 3.254 8.219z" data-name="Слой 2" />
+						</svg>
+					</a>
+					<p>Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis. Vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra vulputate sapien nec sagittis aliquam bibendum.</p>
+				</div>
+
+				<div class="widget w-contacts">
+					<ul class="socials socials--white">
+						<li class="social-item">
+							<a href="#">
+								<i class="fab fa-twitter woox-icon"></i>
+							</a>
+						</li>
+
+						<li class="social-item">
+							<a href="#">
+								<i class="fab fa-dribbble woox-icon"></i>
+							</a>
+						</li>
+
+						<li class="social-item">
+							<a href="#">
+								<i class="fab fa-instagram woox-icon"></i>
+							</a>
+						</li>
+
+						<li class="social-item">
+							<a href="#">
+								<i class="fab fa-linkedin-in woox-icon"></i>
+							</a>
+						</li>
+
+						<li class="social-item">
+							<a href="#">
+								<i class="fab fa-facebook-square woox-icon"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="sub-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-12 col-sm-offset-0 col-xs-12">
+
+					<span>© All right reserved 2018.</span>
+					<span><a href="index.html">The Woox</a> - ICO and Cryptocurrency Website PSD Template.</span>
+
+					<div class="logo-design">
+						<img src="img/logo-fire.png" alt="ThemeFire">
+						<div class="design-wrap">
+							<div class="sup-title">designed by</div>
+							<a href="https://themeforest.net/user/themefire/portfolio" class="logo-title">themefire</a>
+						</div>
+					</div>
+
+					<div class="logo-design logo-design-crumina">
+						<img src="img/crumina-logo.png" alt="Crumina">
+						<div class="design-wrap">
+							<div class="sup-title">developed by</div>
+							<a href="https://crumina.net/" class="logo-title">Crumina</a>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<a class="back-to-top" href="#">
+		<svg class="woox-icon icon-top-arrow">
+			<use xlink:href="#icon-top-arrow"></use>
+		</svg>
+	</a>
+</footer>
+
+<!-- ... end Footer -->
+
+
+<script src="js/method-assign.js"></script>
+
+<!-- jQuery first, then Other JS. -->
+
+<script src="js/jquery-3.3.1.js"></script>
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDpqPQbjKiY7zSvLyPRIWWOfG1XiuhhYg"
+		async defer></script>
+
+<script src="js/js-plugins/leaflet.js"></script>
+<script src="js/js-plugins/MarkerClusterGroup.js"></script>
+<script src="js/js-plugins/crum-mega-menu.js"></script>
+<script src="js/js-plugins/waypoints.js"></script>
+<script src="js/js-plugins/jquery-circle-progress.js"></script>
+<script src="js/js-plugins/segment.js"></script>
+<script src="js/js-plugins/bootstrap.js"></script>
+<script src="js/js-plugins/imagesLoaded.js"></script>
+<script src="js/js-plugins/jquery.matchHeight.js"></script>
+<script src="js/js-plugins/jquery-countTo.js"></script>
+<script src="js/js-plugins/Headroom.js"></script>
+<script src="js/js-plugins/jquery.magnific-popup.js"></script>
+<script src="js/js-plugins/popper.min.js"></script>
+<script src="js/js-plugins/particles.js"></script>
+<script src="js/js-plugins/perfect-scrollbar.js"></script>
+<script src="js/js-plugins/jquery.datetimepicker.full.js"></script>
+<script src="js/js-plugins/svgxuse.js"></script>
+<script src="js/js-plugins/select2.js"></script>
+<script src="js/js-plugins/smooth-scroll.js"></script>
+<script src="js/js-plugins/sharer.js"></script>
+<script src="js/js-plugins/isotope.pkgd.min.js"></script>
+<script src="js/js-plugins/ajax-pagination.js"></script>
+<script src="js/js-plugins/swiper.min.js"></script>
+<script src="js/js-plugins/material.min.js"></script>
+<script src="js/js-plugins/orbitlist.js"></script>
+<script src="js/js-plugins/highstock.js"></script>
+<script src="js/js-plugins/bootstrap-datepicker.js"></script>
+<script src="js/js-plugins/TimeCircles.js"></script>
+<script src="js/js-plugins/ion.rangeSlider.js"></script>
+
+<!-- FontAwesome 5.x.x JS -->
+
+<script defer src="fonts/fontawesome-all.js"></script>
+
+<script src="js/main.js"></script>
+
+<!-- SVG icons loader -->
+<script src="js/svg-loader.js"></script>
+<!-- /SVG icons loader -->
+
+</body>
+</html>
+

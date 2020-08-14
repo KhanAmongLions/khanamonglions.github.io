@@ -1,0 +1,1839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Woox - Pricing Tables</title>
+
+
+	<link rel="stylesheet" type="text/css" href="css/plugins.css">
+	<link rel="stylesheet" type="text/css" href="css/theme-styles.css">
+	<link rel="stylesheet" type="text/css" href="css/blocks.css">
+	<link rel="stylesheet" type="text/css" href="css/widgets.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700i,900," rel="stylesheet">
+
+
+	<!--Styles for RTL-->
+
+	<!--<link rel="stylesheet" type="text/css" href="css/rtl.css">-->
+
+
+</head>
+
+<body class="crumina-grid">
+
+<!-- Preloader -->
+
+<!--<div id="hellopreloader">
+	<div class="preloader">
+		<svg width="135" height="140" fill="#fff">
+			<rect width="15" height="120" y="10" rx="6">
+				<animate attributeName="height" begin="0.5s" calcMode="linear" dur="1s" repeatCount="indefinite" values="120;110;100;90;80;70;60;50;40;140;120" />
+				<animate attributeName="y" begin="0.5s" calcMode="linear" dur="1s" repeatCount="indefinite" values="10;15;20;25;30;35;40;45;50;0;10" />
+			</rect>
+			<rect width="15" height="120" x="30" y="10" rx="6">
+				<animate attributeName="height" begin="0.25s" calcMode="linear" dur="1s" repeatCount="indefinite" values="120;110;100;90;80;70;60;50;40;140;120" />
+				<animate attributeName="y" begin="0.25s" calcMode="linear" dur="1s" repeatCount="indefinite" values="10;15;20;25;30;35;40;45;50;0;10" />
+			</rect>
+			<rect width="15" height="140" x="60" rx="6">
+				<animate attributeName="height" begin="0s" calcMode="linear" dur="1s" repeatCount="indefinite" values="120;110;100;90;80;70;60;50;40;140;120" />
+				<animate attributeName="y" begin="0s" calcMode="linear" dur="1s" repeatCount="indefinite" values="10;15;20;25;30;35;40;45;50;0;10" />
+			</rect>
+			<rect width="15" height="120" x="90" y="10" rx="6">
+				<animate attributeName="height" begin="0.25s" calcMode="linear" dur="1s" repeatCount="indefinite" values="120;110;100;90;80;70;60;50;40;140;120" />
+				<animate attributeName="y" begin="0.25s" calcMode="linear" dur="1s" repeatCount="indefinite" values="10;15;20;25;30;35;40;45;50;0;10" />
+			</rect>
+			<rect width="15" height="120" x="120" y="10" rx="6">
+				<animate attributeName="height" begin="0.5s" calcMode="linear" dur="1s" repeatCount="indefinite" values="120;110;100;90;80;70;60;50;40;140;120" />
+				<animate attributeName="y" begin="0.5s" calcMode="linear" dur="1s" repeatCount="indefinite" values="10;15;20;25;30;35;40;45;50;0;10" />
+			</rect>
+		</svg>
+
+		<div class="text">Loading ...</div>
+	</div>
+</div>-->
+
+<!-- ... end Preloader -->
+
+<!-- Header -->
+
+<header class="header" id="site-header">
+	<div class="container">
+		<div class="header-content-wrapper">
+			<a href="index.html" class="site-logo">
+				<img src="img/logo-primary.png" alt="Woox">
+				<svg class="woox-icon" viewBox="0 0 481.448 101.996">
+					<path d="M152.514 14.926c0 2.1-1.339 4.593-2.1 7.081L126.3 89.366c-2.487 7.654-8.229 11.673-14.543 11.673-6.889 0-12.056-4.019-15.309-11.673L76.162 43.822 55.877 89.366c-3.253 7.654-8.994 11.673-15.309 11.673-6.7 0-12.056-4.019-14.543-11.673L2.1 22.007C1.148 19.519 0 17.031 0 14.926A14.213 14.213 0 0 1 14.352.574c5.358 0 11.1 3.062 12.821 8.037l15.5 49.18L62.575 9.76C65.063 3.827 69.655.574 76.162.574c6.7 0 11.29 3.253 13.778 9.186l19.71 48.031 15.692-49.18c1.531-4.593 7.271-8.037 12.821-8.037a14.212 14.212 0 0 1 14.351 14.352zM263.69 51.285c0 34.253-29.853 50.711-51.667 50.711-22.006 0-51.859-16.458-51.859-50.711C160.164 17.223 190.016 0 212.022 0c21.815 0 51.668 17.223 51.668 51.285zm-73.292 0c0 14.352 9.568 24.3 21.624 24.3 11.864 0 21.624-9.951 21.624-24.3 0-14.926-9.759-24.877-21.624-24.877-12.055 0-21.622 9.951-21.622 24.877zm190.974 0c0 34.253-29.853 50.715-51.672 50.715-22.006 0-51.858-16.458-51.858-50.711C277.845 17.223 307.7 0 329.7 0c21.819 0 51.672 17.223 51.672 51.285zm-73.291 0c0 14.352 9.567 24.3 21.623 24.3 11.865 0 21.624-9.951 21.624-24.3 0-14.926-9.759-24.877-21.624-24.877-12.056 0-21.623 9.951-21.623 24.877zm173.367 36.932c0 7.271-6.7 13.4-13.97 13.4-4.4 0-7.846-2.3-10.716-5.55l-21.05-24.686-21.05 24.686c-2.87 3.253-6.123 5.55-10.716 5.55-7.08 0-13.97-6.124-13.97-13.4a12.074 12.074 0 0 1 3.254-8.229l25.45-28.9-25.45-28.9a12.348 12.348 0 0 1-3.062-8.037c0-7.463 6.89-13.586 13.97-13.586a13.062 13.062 0 0 1 10.716 5.549L435.712 30.8l20.859-24.676c2.87-3.444 6.315-5.549 10.907-5.549 6.89 0 13.778 6.124 13.778 13.586a12.352 12.352 0 0 1-3.062 8.037l-25.451 28.9 25.451 28.9a11.252 11.252 0 0 1 3.254 8.219z" data-name="Слой 2" />
+				</svg>
+			</a>
+
+			<nav id="primary-menu" class="primary-menu">
+
+				<!-- menu-icon-wrapper -->
+
+				<a href='javascript:void(0)' id="menu-icon-trigger" class="menu-icon-trigger showhide">
+					<span class="mob-menu--title">Menu</span>
+					<span id="menu-icon-wrapper" class="menu-icon-wrapper">
+						<svg width="1000px" height="1000px">
+							<path id="pathD" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+							<path id="pathE" d="M 300 500 L 700 500"></path>
+							<path id="pathF" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+						</svg>
+					</span>
+				</a>
+
+				<ul class="primary-menu-menu">
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+
+					<li class="menu-item-has-children">
+						<a href="#">Cryptocurrencies</a>
+						<ul class="sub-menu">
+							<li class="menu-item-has-children">
+								<a href="002_cryptocurrencies.html">
+									Bitcoin <span>BTC</span>
+								</a>
+								<ul class="sub-menu">
+									<li>
+										<a href="002_cryptocurrencies.html">Support Bitcoin</a>
+									</li>
+									<li>
+										<a href="002_cryptocurrencies.html">How to buy Bitcoin</a>
+									</li>
+
+									<li>
+										<a href="002_cryptocurrencies.html">Development</a>
+									</li>
+
+									<li>
+										<a href="002_cryptocurrencies.html">Exchange</a>
+									</li>
+								</ul>
+							</li>
+							<li class="menu-item-has-children">
+								<a href="002_cryptocurrencies.html">
+									Ethereum <span>ETH</span>
+								</a>
+								<ul class="sub-menu">
+									<li>
+										<a href="002_cryptocurrencies.html">Support Ethereum</a>
+									</li>
+									<li>
+										<a href="002_cryptocurrencies.html">How to buy Ethereum</a>
+									</li>
+
+									<li>
+										<a href="002_cryptocurrencies.html">Development</a>
+									</li>
+
+									<li>
+										<a href="002_cryptocurrencies.html">Exchange</a>
+									</li>
+								</ul>
+							</li>
+							<li class="menu-item-has-children">
+								<a href="002_cryptocurrencies.html">
+									Dash <span>DASH</span>
+								</a>
+								<ul class="sub-menu">
+									<li>
+										<a href="002_cryptocurrencies.html">Support Dash</a>
+									</li>
+									<li>
+										<a href="002_cryptocurrencies.html">How to buy Dash</a>
+									</li>
+
+									<li>
+										<a href="002_cryptocurrencies.html">Development</a>
+									</li>
+
+									<li>
+										<a href="002_cryptocurrencies.html">Exchange</a>
+									</li>
+								</ul>
+							</li>
+							<li class="menu-item-has-children">
+								<a href="002_cryptocurrencies.html">
+									Litecoin <span>LTC</span>
+								</a>
+								<ul class="sub-menu">
+									<li>
+										<a href="002_cryptocurrencies.html">Support Litecoin</a>
+									</li>
+									<li>
+										<a href="002_cryptocurrencies.html">How to buy Litecoin</a>
+									</li>
+
+									<li>
+										<a href="002_cryptocurrencies.html">Development</a>
+									</li>
+
+									<li>
+										<a href="002_cryptocurrencies.html">Exchange</a>
+									</li>
+								</ul>
+							</li>
+							<li class="menu-item-has-children">
+								<a href="002_cryptocurrencies.html">
+									Ripple <span>XRP</span>
+								</a>
+								<ul class="sub-menu">
+									<li>
+										<a href="002_cryptocurrencies.html">Support XRP</a>
+									</li>
+									<li>
+										<a href="002_cryptocurrencies.html">How to buy XRP</a>
+									</li>
+
+									<li>
+										<a href="002_cryptocurrencies.html">Development</a>
+									</li>
+
+									<li>
+										<a href="002_cryptocurrencies.html">Exchange</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+
+					<li class="menu-item-has-children">
+						<a href="#">Experts</a>
+						<ul class="sub-menu sub-menu--with-icons">
+							<li class="menu-item-has-children">
+								<a href="003_experts.html">
+									<img src="img/if_Bitcoin_2745023.png" class="woox-icon" alt="bitcoin">
+									Bitcoin <span>BTC</span>
+									<svg class="woox-icon icon-arrow-right-line">
+										<use xlink:href="#icon-arrow-right-line"></use>
+									</svg>
+								</a>
+								<ul class="sub-menu">
+									<li>
+										<a href="003_experts.html">Support Bitcoin</a>
+									</li>
+									<li>
+										<a href="003_experts.html">How to buy Bitcoin</a>
+									</li>
+
+									<li>
+										<a href="003_experts.html">Development</a>
+									</li>
+
+									<li>
+										<a href="003_experts.html">Exchange</a>
+									</li>
+								</ul>
+							</li>
+							<li class="menu-item-has-children">
+								<a href="003_experts.html">
+									<img src="img/if_etherium_eth_ethcoin_crypto_2844386.png" class="woox-icon" alt="bitcoin">
+									Ethereum <span>ETH</span>
+									<svg class="woox-icon icon-arrow-right-line">
+										<use xlink:href="#icon-arrow-right-line"></use>
+									</svg>
+								</a>
+								<ul class="sub-menu">
+									<li>
+										<a href="003_experts.html">Support Ethereum</a>
+									</li>
+									<li>
+										<a href="003_experts.html">How to buy Ethereum</a>
+									</li>
+
+									<li>
+										<a href="003_experts.html">Development</a>
+									</li>
+
+									<li>
+										<a href="003_experts.html">Exchange</a>
+									</li>
+								</ul>
+							</li>
+							<li class="menu-item-has-children">
+								<a href="003_experts.html">
+									<img src="img/if_dash_dashcoin_2844383.png" class="woox-icon" alt="bitcoin">
+									Dash <span>DASH</span>
+									<svg class="woox-icon icon-arrow-right-line">
+										<use xlink:href="#icon-arrow-right-line"></use>
+									</svg>
+								</a>
+								<ul class="sub-menu">
+									<li>
+										<a href="003_experts.html">Support Dash</a>
+									</li>
+									<li>
+										<a href="003_experts.html">How to buy Dash</a>
+									</li>
+
+									<li>
+										<a href="003_experts.html">Development</a>
+									</li>
+
+									<li>
+										<a href="003_experts.html">Exchange</a>
+									</li>
+								</ul>
+							</li>
+							<li class="menu-item-has-children">
+								<a href="003_experts.html">
+									<img src="img/if_litecion_ltc_lite_coin_crypto_2844390.png" class="woox-icon" alt="litecoin">
+									Litecoin <span>LTC</span>
+									<svg class="woox-icon icon-arrow-right-line">
+										<use xlink:href="#icon-arrow-right-line"></use>
+									</svg>
+								</a>
+								<ul class="sub-menu">
+									<li>
+										<a href="003_experts.html">Support Litecoin</a>
+									</li>
+									<li>
+										<a href="05_case_details_ver_01.html">How to buy Litecoin</a>
+									</li>
+
+									<li>
+										<a href="003_experts.html">Development</a>
+									</li>
+
+									<li>
+										<a href="003_experts.html">Exchange</a>
+									</li>
+								</ul>
+							</li>
+							<li class="menu-item-has-children">
+								<a href="003_experts.html">
+									<img src="img/if_ripple_xrp_coin_2844396.png" class="woox-icon" alt="bitcoin">
+									Ripple <span>XRP</span>
+									<svg class="woox-icon icon-arrow-right-line">
+										<use xlink:href="#icon-arrow-right-line"></use>
+									</svg>
+								</a>
+								<ul class="sub-menu">
+									<li>
+										<a href="003_experts.html">Support XRP</a>
+									</li>
+									<li>
+										<a href="003_experts.html">How to buy XRP</a>
+									</li>
+
+									<li>
+										<a href="003_experts.html">Development</a>
+									</li>
+
+									<li>
+										<a href="003_experts.html">Exchange</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+
+					<li class="menu-item-has-mega-menu menu-item-has-children">
+						<a href="#">Coin Market</a>
+						<div class="megamenu megamenu-bg">
+							<div class="megamenu-row">
+
+								<div class="col4">
+									<ul>
+										<li class="megamenu-item-info">
+											<h5 class="megamenu-item-info-title">Tools</h5>
+										</li>
+										<li>
+											<a href="005_coin_market.html">Global Charts</a>
+										</li>
+										<li>
+											<a href="005_coin_market.html">Currency Converter</a>
+										</li>
+										<li>
+											<a href="005_coin_market.html">Website Widgets</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col4">
+									<ul>
+										<li class="megamenu-item-info">
+											<h5 class="megamenu-item-info-title">Market Cap</h5>
+										</li>
+										<li>
+											<a href="005_coin_market.html">Top 5 Coins</a>
+										</li>
+
+										<li>
+											<a href="005_coin_market.html">Tokens</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col4">
+									<ul>
+										<li class="megamenu-item-info">
+											<h5 class="megamenu-item-info-title">Trending</h5>
+										</li>
+										<li>
+											<a href="005_coin_market.html">Gainers and Losers</a>
+										</li>
+										<li>
+											<a href="005_coin_market.html">Recently Added</a>
+										</li>
+									</ul>
+								</div>
+
+								<div class="col4">
+
+								</div>
+
+							</div>
+						</div>
+					</li>
+
+					<li class="menu-item-has-mega-menu menu-item-has-children">
+						<a href="#">Events</a>
+
+						<div class="megamenu megamenu-with-slider">
+
+							<div class="crumina-module crumina-module-slider slider-item--equal-height">
+								<div class="row">
+									<div class="col-lg-3">
+										<div class="crumina-module crumina-heading heading--with-decoration heading--h5">   <h5 class="heading-title">Upcoming Events</h5>   <div class="heading-text">Investigationes demonstraverunt lectores legere me lius      quod ii legunt faucibus ac feugiat sed lectus.   </div></div>
+										<div class="swiper-btn-wrap">
+											<div class="swiper-btn-prev">
+												<svg class="woox-icon icon-line-arrow-left">
+													<use xlink:href="#icon-line-arrow-left"></use>
+												</svg>
+											</div>
+
+											<div class="swiper-btn-next">
+												<svg class="woox-icon icon-line-arrow-right">
+													<use xlink:href="#icon-line-arrow-right"></use>
+												</svg>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-9">
+										<div class="swiper-container" data-show-items="3" data-prev-next="1">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<a href="006_events.html" class="crumina-module crumina-event-item">
+														<div class="event-thumb bg-event1">
+															<div class="overlay"></div>
+														</div>
+														<div class="event-content">
+															<div class="event-date">
+																<svg class="woox-icon icon-school-calendar">
+																	<use xlink:href="#icon-school-calendar"></use>
+																</svg>
+																March 16, 2018
+															</div>
+															<h6 class="event-title">What is Bitcoin? A Step-By-Step Guide For Beginners</h6>
+														</div>
+													</a>
+												</div>
+												<div class="swiper-slide">
+													<a href="007_event_details.html" class="crumina-module crumina-event-item">
+														<div class="event-thumb bg-event2">
+															<div class="overlay"></div>
+														</div>
+														<div class="event-content">
+															<div class="event-date">
+																<svg class="woox-icon icon-school-calendar">
+																	<use xlink:href="#icon-school-calendar"></use>
+																</svg>
+																March 16, 2018
+															</div>
+															<h6 class="event-title">Apply them in Your Own Routines</h6>
+														</div>
+													</a>
+												</div>
+												<div class="swiper-slide">
+													<a href="008_event_register.html" class="crumina-module crumina-event-item">
+														<div class="event-thumb bg-event3">
+															<div class="overlay"></div>
+														</div>
+														<div class="event-content">
+															<div class="event-date">
+																<svg class="woox-icon icon-school-calendar">
+																	<use xlink:href="#icon-school-calendar"></use>
+																</svg>
+																March 16, 2018
+															</div>
+															<h6 class="event-title">Is your business ready for a production blockchain rollout?</h6>
+														</div>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</li>
+
+					<li class="menu-item-has-mega-menu menu-item-has-children">
+						<a href="#">Pages</a>
+						<div class="megamenu">
+							<div class="megamenu-row">
+
+								<div class="col4">
+									<ul>
+										<li class="megamenu-item-info">
+											<h5 class="megamenu-item-info-title">Standard Pages</h5>
+										</li>
+										<li>
+											<a href="009_news.html">News Page</a>
+										</li>
+										<li>
+											<a href="010_news_details.html">News Details</a>
+										</li>
+										<li>
+											<a href="012_page_not_found.html">Not Found</a>
+										</li>
+										<li>
+											<a href="028_typography.html">Typography</a>
+										</li>
+										<li>
+											<a href="030_icons.html">Icons</a>
+										</li>
+
+									</ul>
+								</div>
+								<div class="col4">
+									<ul>
+										<li class="megamenu-item-info">
+											<h5 class="megamenu-item-info-title">Elements</h5>
+										</li>
+										<li>
+											<a href="013_pricing_tables.html">Pricing Tables</a>
+										</li>
+										<li>
+											<a href="014_forms.html">Forms</a>
+										</li>
+										<li>
+											<a href="015_quotes.html">Quotes</a>
+										</li>
+										<li>
+											<a href="016_testimonial_styles.html">Testimonials</a>
+										</li>
+										<li>
+											<a href="017_tabs.html">Tabs</a>
+										</li>
+									</ul>
+								</div>
+								<div class="col4">
+									<ul>
+										<li class="megamenu-item-info">
+											<h5 class="megamenu-item-info-title">Elements</h5>
+										</li>
+										<li>
+											<a href="018_tables.html">Tables</a>
+										</li>
+										<li>
+											<a href="019_expert_hover_effects.html">Experts</a>
+										</li>
+										<li>
+											<a href="029_colors.html">Colors</a>
+										</li>
+										<li>
+											<a href="021_benefits.html">Benefits</a>
+										</li>
+										<li>
+											<a href="022_accordion_toggle.html">Accordions</a>
+										</li>
+									</ul>
+								</div>
+
+								<div class="col4">
+									<ul>
+										<li class="megamenu-item-info">
+											<h5 class="megamenu-item-info-title">Elements</h5>
+										</li>
+										<li>
+											<a href="023_alerts_message.html">Alerts</a>
+										</li>
+										<li>
+											<a href="024_progress_bars.html">Progress bars</a>
+										</li>
+										<li>
+											<a href="025_button_styles.html">Buttons</a>
+										</li>
+										<li>
+											<a href="026_counters_and_timers.html">Counters</a>
+										</li>
+										<li>
+											<a href="027_headings.html">Headings</a>
+										</li>
+									</ul>
+								</div>
+
+							</div>
+						</div>
+					</li>
+
+					<li class="">
+						<a href="011_contacts.html">Contacts</a>
+					</li>
+				</ul>
+
+			</nav>
+
+			<select class="woox--select language-switcher" data-minimum-results-for-search="Infinity" data-dropdown-css-class="language-switcher-dropdown">
+				<option value="French" data-href="">French</option>
+				<option value="German" data-href="">German</option>
+				<option value="Ukrainian" data-href="">Ukrainian</option>
+				<option value="English" data-href="">English</option>
+			</select>
+
+		</div>
+	</div>
+</header>
+
+<!-- ... end Header -->
+
+
+<div class="main-content-wrapper medium-padding120">
+	<section class="pt-mobile-80">
+		<div class="container">
+			<div class="row medium-padding100">
+				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb30" data-mh="pricing-item">
+					<div class="crumina-module crumina-pricing-table pricing-table--style1">
+						<div class="pricing-thumb">
+							<img src="img/if_Bitcoin_2745023.png" class="woox-icon" alt="bitcoin">
+						</div>
+						<h5 class="pricing-title">Bitcoin <span>BTC</span></h5>
+						<div class="price">
+							<div class="price-sup-title">1 Bitcoin equals:</div>
+							<div class="price-value">$9.635.34</div>
+						</div>
+						<ul class="pricing-tables-position">
+							<li class="position-item">
+								<div class="currency-details-item">
+									<h6 class="title">Market Cap:</h6>
+									<h6 class="value">$163.936.272.151 USD</h6>
+								</div>
+							</li>
+							<li class="position-item">
+								<div class="currency-details-item">
+									<h6 class="title">Volume (24h):</h6>
+									<h6 class="value">$9.758.550.000 USD</h6>
+								</div>
+							</li>
+							<li class="position-item">
+								<div class="currency-details-item">
+									<h6 class="title">Circulating Supply:</h6>
+									<h6 class="value">17.014.062 BTC</h6>
+								</div>
+							</li>
+						</ul>
+						<a href="005_coin_market.html" class="btn btn--large btn--green-light btn--transparent">Buy Now</a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb30" data-mh="pricing-item">
+					<div class="crumina-module crumina-pricing-table pricing-table--style1">
+						<div class="pricing-thumb">
+							<img src="img/if_etherium_eth_ethcoin_crypto_2844386.png" class="woox-icon" alt="etherium">
+						</div>
+						<h5 class="pricing-title">Ethereum <span>ETH</span></h5>
+						<div class="price">
+							<div class="price-sup-title">1 Ethereum equals:</div>
+							<div class="price-value">$820.93</div>
+						</div>
+						<ul class="pricing-tables-position">
+							<li class="position-item">
+								<div class="currency-details-item">
+									<h6 class="title">Market Cap:</h6>
+									<h6 class="value">$91.926.166.165 USD</h6>
+								</div>
+							</li>
+							<li class="position-item">
+								<div class="currency-details-item">
+									<h6 class="title">Volume (24h):</h6>
+									<h6 class="value">$2.323.180.000 USD</h6>
+								</div>
+							</li>
+							<li class="position-item">
+								<div class="currency-details-item">
+									<h6 class="title">Circulating Supply:</h6>
+									<h6 class="value">97.730.789 ETH</h6>
+								</div>
+							</li>
+						</ul>
+						<a href="005_coin_market.html" class="btn btn--large btn--green-light btn--transparent">Buy Now</a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb30" data-mh="pricing-item">
+					<div class="crumina-module crumina-pricing-table pricing-table--style1">
+						<div class="pricing-thumb">
+							<img src="img/if_dash_dashcoin_2844383.png" class="woox-icon" alt="Dash">
+						</div>
+						<h5 class="pricing-title">Dash <span>Dash</span></h5>
+						<div class="price">
+							<div class="price-sup-title">1 Dash equals:</div>
+							<div class="price-value">$494.43</div>
+						</div>
+						<ul class="pricing-tables-position">
+							<li class="position-item">
+								<div class="currency-details-item">
+									<h6 class="title">Market Cap:</h6>
+									<h6 class="value">$3.980.830.982 USD</h6>
+								</div>
+							</li>
+							<li class="position-item">
+								<div class="currency-details-item">
+									<h6 class="title">Volume (24h):</h6>
+									<h6 class="value">$127.057.000 USD</h6>
+								</div>
+							</li>
+							<li class="position-item">
+								<div class="currency-details-item">
+									<h6 class="title">Circulating Supply:</h6>
+									<h6 class="value">8.051.338 DASH</h6>
+								</div>
+							</li>
+						</ul>
+						<a href="005_coin_market.html" class="btn btn--large btn--green-light btn--transparent">Buy Now</a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb30" data-mh="pricing-item">
+					<div class="crumina-module crumina-pricing-table pricing-table--style1">
+						<div class="pricing-thumb">
+							<img src="img/if_litecion_ltc_lite_coin_crypto_2844390.png" class="woox-icon" alt="Litecoin">
+						</div>
+						<h5 class="pricing-title">Litecoin <span>LTC</span></h5>
+						<div class="price">
+							<div class="price-sup-title">1 Litecoin equals:</div>
+							<div class="price-value">$158.85</div>
+						</div>
+						<ul class="pricing-tables-position">
+							<li class="position-item">
+								<div class="currency-details-item">
+									<h6 class="title">Market Cap:</h6>
+									<h6 class="value">$8.954.645.780 USD</h6>
+								</div>
+							</li>
+							<li class="position-item">
+								<div class="currency-details-item">
+									<h6 class="title">Volume (24h):</h6>
+									<h6 class="value">$616.044.000 USD</h6>
+								</div>
+							</li>
+							<li class="position-item">
+								<div class="currency-details-item">
+									<h6 class="title">Circulating Supply:</h6>
+									<h6 class="value">56.372.063 LTC</h6>
+								</div>
+							</li>
+						</ul>
+						<a href="005_coin_market.html" class="btn btn--large btn--green-light btn--transparent">Buy Now</a>
+					</div>
+				</div>
+			</div>
+			<hr class="divider">
+		</div>
+	</section>
+
+	<section>
+		<div class="container">
+			<div class="row medium-padding100">
+				<div class="pricing-tables-wrap">
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 no-padding" data-mh="pricing-item">
+						<div class="crumina-module crumina-pricing-table pricing-table--style2">
+							<div class="bg-layer full-block"></div>
+							<div class="pricing-thumb">
+								<img src="img/if_Bitcoin_2745023.png" class="woox-icon" alt="bitcoin">
+								<h5 class="pricing-title">Bitcoin <span>BTC</span></h5>
+							</div>
+							<div class="price">
+								<div class="price-sup-title">1 Bitcoin equals:</div>
+								<div class="price-value">$9.635.34</div>
+							</div>
+							<ul class="pricing-tables-position">
+								<li class="position-item">
+									<div class="currency-details-item">
+										<h6 class="title">Market Cap:</h6>
+										<h6 class="value">$163.936.272.151 USD</h6>
+									</div>
+								</li>
+								<li class="position-item">
+									<div class="currency-details-item">
+										<h6 class="title">Volume (24h):</h6>
+										<h6 class="value">$9.758.550.000 USD</h6>
+									</div>
+								</li>
+								<li class="position-item">
+									<div class="currency-details-item">
+										<h6 class="title">Circulating Supply:</h6>
+										<h6 class="value">17.014.062 BTC</h6>
+									</div>
+								</li>
+							</ul>
+							<a href="005_coin_market.html" class="btn btn--large btn--primary full-width">Buy Now</a>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 no-padding" data-mh="pricing-item">
+						<div class="crumina-module crumina-pricing-table pricing-table--style2">
+							<div class="bg-layer full-block"></div>
+							<div class="pricing-thumb">
+								<img src="img/if_etherium_eth_ethcoin_crypto_2844386.png" class="woox-icon" alt="etherium">
+								<h5 class="pricing-title">Ethereum <span>ETH</span></h5>
+							</div>
+							<div class="price">
+								<div class="price-sup-title">1 Ethereum equals:</div>
+								<div class="price-value">$820.93</div>
+							</div>
+							<ul class="pricing-tables-position">
+								<li class="position-item">
+									<div class="currency-details-item">
+										<h6 class="title">Market Cap:</h6>
+										<h6 class="value">$91.926.166.165 USD</h6>
+									</div>
+								</li>
+								<li class="position-item">
+									<div class="currency-details-item">
+										<h6 class="title">Volume (24h):</h6>
+										<h6 class="value">$2.323.180.000 USD</h6>
+									</div>
+								</li>
+								<li class="position-item">
+									<div class="currency-details-item">
+										<h6 class="title">Circulating Supply:</h6>
+										<h6 class="value">97.730.789 ETH</h6>
+									</div>
+								</li>
+							</ul>
+							<a href="005_coin_market.html" class="btn btn--large btn--blue-light full-width">Buy Now</a>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 no-padding" data-mh="pricing-item">
+						<div class="crumina-module crumina-pricing-table pricing-table--style2">
+							<div class="bg-layer full-block"></div>
+							<div class="pricing-thumb">
+								<img src="img/if_dash_dashcoin_2844383.png" class="woox-icon" alt="Dash">
+								<h5 class="pricing-title">Dash <span>Dash</span></h5>
+							</div>
+							<div class="price">
+								<div class="price-sup-title">1 Dash equals:</div>
+								<div class="price-value">$494.43</div>
+							</div>
+							<ul class="pricing-tables-position">
+								<li class="position-item">
+									<div class="currency-details-item">
+										<h6 class="title">Market Cap:</h6>
+										<h6 class="value">$3.980.830.982 USD</h6>
+									</div>
+								</li>
+								<li class="position-item">
+									<div class="currency-details-item">
+										<h6 class="title">Volume (24h):</h6>
+										<h6 class="value">$127.057.000 USD</h6>
+									</div>
+								</li>
+								<li class="position-item">
+									<div class="currency-details-item">
+										<h6 class="title">Circulating Supply:</h6>
+										<h6 class="value">8.051.338 DASH</h6>
+									</div>
+								</li>
+							</ul>
+							<a href="005_coin_market.html" class="btn btn--large btn--green-light full-width">Buy Now</a>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 no-padding" data-mh="pricing-item">
+						<div class="crumina-module crumina-pricing-table pricing-table--style2">
+							<div class="bg-layer full-block"></div>
+							<div class="pricing-thumb">
+								<img src="img/if_litecion_ltc_lite_coin_crypto_2844390.png" class="woox-icon" alt="Litecoin">
+								<h5 class="pricing-title">Litecoin <span>LTC</span></h5>
+							</div>
+							<div class="price">
+								<div class="price-sup-title">1 Litecoin equals:</div>
+								<div class="price-value">$158.85</div>
+							</div>
+							<ul class="pricing-tables-position">
+								<li class="position-item">
+									<div class="currency-details-item">
+										<h6 class="title">Market Cap:</h6>
+										<h6 class="value">$8.954.645.780 USD</h6>
+									</div>
+								</li>
+								<li class="position-item">
+									<div class="currency-details-item">
+										<h6 class="title">Volume (24h):</h6>
+										<h6 class="value">$616.044.000 USD</h6>
+									</div>
+								</li>
+								<li class="position-item">
+									<div class="currency-details-item">
+										<h6 class="title">Circulating Supply:</h6>
+										<h6 class="value">56.372.063 LTC</h6>
+									</div>
+								</li>
+							</ul>
+							<a href="005_coin_market.html" class="btn btn--large btn--secondary full-width">Buy Now</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr class="divider">
+		</div>
+	</section>
+
+	<section>
+		<div class="container">
+			<div class="row medium-padding100">
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12" data-mh="pricing-item">
+					<div class="crumina-module crumina-pricing-table pricing-table--small">
+						<div class="pricing-thumb">
+							<img src="img/if_Bitcoin_2745023.png" class="woox-icon" alt="bitcoin">
+							<h5 class="pricing-title">Bitcoin <span>BTC</span></h5>
+							<div class="gain-drop-arrow">
+								<svg class="woox-icon icon-arrow-up arrow-up active">
+									<use xlink:href="#icon-arrow-up"></use>
+								</svg>
+								<svg class="woox-icon icon-arrow-down arrow-down">
+									<use xlink:href="#icon-arrow-down"></use>
+								</svg>
+							</div>
+						</div>
+						<div class="price">
+							<div class="price-sup-title">1 Bitcoin equals:</div>
+							<div class="price-value">$9.635.34
+								<div class="growth">+ 1.25%</div>
+							</div>
+						</div>
+						<a href="005_coin_market.html" class="btn btn--large btn--dark-lighter btn--transparent full-width">Buy Bitcoin Now!</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12" data-mh="pricing-item">
+					<div class="crumina-module crumina-pricing-table pricing-table--small">
+						<div class="pricing-thumb">
+							<img src="img/if_etherium_eth_ethcoin_crypto_2844386.png" class="woox-icon" alt="ethereum">
+							<h5 class="pricing-title">Ethereum <span>ETH</span></h5>
+							<div class="gain-drop-arrow">
+								<svg class="woox-icon icon-arrow-up arrow-up">
+									<use xlink:href="#icon-arrow-up"></use>
+								</svg>
+								<svg class="woox-icon icon-arrow-down arrow-down active">
+									<use xlink:href="#icon-arrow-down"></use>
+								</svg>
+							</div>
+						</div>
+						<div class="price">
+							<div class="price-sup-title">1 Ethereum equals:</div>
+							<div class="price-value">$820.93
+								<div class="drop">- 4.22%</div>
+							</div>
+						</div>
+						<a href="005_coin_market.html" class="btn btn--large btn--dark-lighter btn--transparent full-width">Buy Ethereum Now!</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12" data-mh="pricing-item">
+					<div class="crumina-module crumina-pricing-table pricing-table--small">
+						<div class="pricing-thumb">
+							<img src="img/if_dash_dashcoin_2844383.png" class="woox-icon" alt="dash">
+							<h5 class="pricing-title">Dash <span>Dash</span></h5>
+							<div class="gain-drop-arrow">
+								<svg class="woox-icon icon-arrow-up arrow-up active">
+									<use xlink:href="#icon-arrow-up"></use>
+								</svg>
+								<svg class="woox-icon icon-arrow-down arrow-down">
+									<use xlink:href="#icon-arrow-down"></use>
+								</svg>
+							</div>
+						</div>
+						<div class="price">
+							<div class="price-sup-title">1 Dash equals:</div>
+							<div class="price-value">$611.24
+								<div class="growth">+ 1.25%</div>
+							</div>
+						</div>
+						<a href="005_coin_market.html" class="btn btn--large btn--dark-lighter btn--transparent full-width">Buy Dash Now!</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12" data-mh="pricing-item">
+					<div class="crumina-module crumina-pricing-table pricing-table--small">
+						<div class="pricing-thumb">
+							<img src="img/if_litecion_ltc_lite_coin_crypto_2844390.png" class="woox-icon" alt="litecoin">
+							<h5 class="pricing-title">Litecoin <span>LTC</span></h5>
+							<div class="gain-drop-arrow">
+								<svg class="woox-icon icon-arrow-up arrow-up">
+									<use xlink:href="#icon-arrow-up"></use>
+								</svg>
+								<svg class="woox-icon icon-arrow-down arrow-down active">
+									<use xlink:href="#icon-arrow-down"></use>
+								</svg>
+							</div>
+						</div>
+						<div class="price">
+							<div class="price-sup-title">1 Litecoin equals:</div>
+							<div class="price-value">$199.39
+								<div class="drop">- 6.17%</div>
+							</div>
+						</div>
+						<a href="005_coin_market.html" class="btn btn--large btn--dark-lighter btn--transparent full-width">Buy Litecoin Now!</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12" data-mh="pricing-item">
+					<div class="crumina-module crumina-pricing-table pricing-table--small">
+						<div class="pricing-thumb">
+							<img src="img/if_ripple_xrp_coin_2844396.png" class="woox-icon" alt="ripple">
+							<h5 class="pricing-title">Ripple <span>XRP</span></h5>
+							<div class="gain-drop-arrow">
+								<svg class="woox-icon icon-arrow-up arrow-up active">
+									<use xlink:href="#icon-arrow-up"></use>
+								</svg>
+								<svg class="woox-icon icon-arrow-down arrow-down">
+									<use xlink:href="#icon-arrow-down"></use>
+								</svg>
+							</div>
+						</div>
+						<div class="price">
+							<div class="price-sup-title">1 Ripple equals:</div>
+							<div class="price-value">$0.949999
+								<div class="growth">+ 12.68%</div>
+							</div>
+						</div>
+						<a href="005_coin_market.html" class="btn btn--large btn--dark-lighter btn--transparent full-width">Buy Ripple Now!</a>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12" data-mh="pricing-item">
+					<div class="crumina-module crumina-pricing-table pricing-table--small">
+						<div class="pricing-thumb">
+							<img src="img/logo-primary.png" class="woox-icon" alt="woox">
+							<h5 class="pricing-title">Woox <span>Woox</span></h5>
+							<div class="gain-drop-arrow">
+								<svg class="woox-icon icon-arrow-up arrow-up active">
+									<use xlink:href="#icon-arrow-up"></use>
+								</svg>
+								<svg class="woox-icon icon-arrow-down arrow-down">
+									<use xlink:href="#icon-arrow-down"></use>
+								</svg>
+							</div>
+						</div>
+						<div class="price">
+							<div class="price-sup-title">1 Woox equals:</div>
+							<div class="price-value">$0.080000
+								<div class="growth">+ 7.38%</div>
+							</div>
+						</div>
+						<a href="005_coin_market.html" class="btn btn--large btn--dark-lighter btn--transparent full-width">Buy Woox Now!</a>
+					</div>
+				</div>
+			</div>
+			<hr class="divider">
+		</div>
+	</section>
+
+	<section>
+		<div class="container">
+			<div class="row medium-padding120">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="mCustomScrollbar scrollable-responsive-table" data-mcs-theme="dark">
+						<table class="pricing-tables-wrap-table">
+						<thead>
+						<tr>
+							<th>Choose your Coin<span class="c-primary">.</span></th>
+							<th colspan="3">Details<span class="c-primary">.</span></th>
+							<th colspan="2">Price<span class="c-primary">.</span></th>
+						</tr>
+						</thead>
+						<tbody>
+						<tr class="crumina-module crumina-pricing-table pricing-table--style-table c-brown">
+							<td>
+								<div class="pricing-thumb">
+									<img src="img/if_Bitcoin_2745023.png" class="woox-icon" alt="bitcoin">
+									<h5 class="pricing-title">Bitcoin <span>BTC</span></h5>
+								</div>
+							</td>
+							<td>
+								<div class="currency-details-item">
+									<h6 class="title">Market Cap:</h6>
+									<h6 class="value">$163.936.272.151 USD</h6>
+								</div>
+							</td>
+							<td>
+								<div class="currency-details-item">
+									<h6 class="title">Volume (24h):</h6>
+									<h6 class="value">$9.758.550.000 USD</h6>
+								</div>
+							</td>
+							<td>
+								<div class="currency-details-item">
+									<h6 class="title">Circulating Supply:</h6>
+									<h6 class="value">17.014.062 BTC</h6>
+								</div>
+							</td>
+							<td>
+								<div class="price">
+									<div class="price-sup-title">1 Bitcoin equals:</div>
+									<div class="price-value">$9.635.34</div>
+								</div>
+							</td>
+							<td>
+								<a href="005_coin_market.html" class="btn btn--large btn--dark-lighter btn--transparent">Buy Now!</a>
+							</td>
+						</tr>
+						<tr class="crumina-module crumina-pricing-table pricing-table--style-table c-blue">
+							<td>
+								<div class="pricing-thumb">
+									<img src="img/if_etherium_eth_ethcoin_crypto_2844386.png" class="woox-icon" alt="bitcoin">
+									<h5 class="pricing-title">Ethereum <span>ETH</span></h5>
+								</div>
+							</td>
+							<td>
+								<div class="currency-details-item">
+									<h6 class="title">Market Cap:</h6>
+									<h6 class="value">$91.926.166.165 USD</h6>
+								</div>
+							</td>
+							<td>
+								<div class="currency-details-item">
+									<h6 class="title">Volume (24h):</h6>
+									<h6 class="value">$2.323.180.000 USD</h6>
+								</div>
+							</td>
+							<td>
+								<div class="currency-details-item">
+									<h6 class="title">Circulating Supply:</h6>
+									<h6 class="value">97.730.789 ETH</h6>
+								</div>
+							</td>
+							<td>
+								<div class="price">
+									<div class="price-sup-title">1 Bitcoin equals:</div>
+									<div class="price-value">$820.93</div>
+								</div>
+							</td>
+							<td>
+								<a href="005_coin_market.html" class="btn btn--large btn--dark-lighter btn--transparent">Buy Now!</a>
+							</td>
+						</tr>
+						<tr class="crumina-module crumina-pricing-table pricing-table--style-table c-blue-light">
+							<td>
+								<div class="pricing-thumb">
+									<img src="img/if_dash_dashcoin_2844383.png" class="woox-icon" alt="bitcoin">
+									<h5 class="pricing-title">Dash <span>DASH</span></h5>
+								</div>
+							</td>
+							<td>
+								<div class="currency-details-item">
+									<h6 class="title">Market Cap:</h6>
+									<h6 class="value">$3.980.830.982 USD</h6>
+								</div>
+							</td>
+							<td>
+								<div class="currency-details-item">
+									<h6 class="title">Volume (24h):</h6>
+									<h6 class="value">$127.057.000 USD</h6>
+								</div>
+							</td>
+							<td>
+								<div class="currency-details-item">
+									<h6 class="title">Circulating Supply:</h6>
+									<h6 class="value">8.051.338 DASH</h6>
+								</div>
+							</td>
+							<td>
+								<div class="price">
+									<div class="price-sup-title">1 Bitcoin equals:</div>
+									<div class="price-value">$494.43</div>
+								</div>
+							</td>
+							<td>
+								<a href="005_coin_market.html" class="btn btn--large btn--dark-lighter btn--transparent">Buy Now!</a>
+							</td>
+						</tr>
+						<tr class="crumina-module crumina-pricing-table pricing-table--style-table c-border-color">
+							<td>
+								<div class="pricing-thumb">
+									<img src="img/if_litecion_ltc_lite_coin_crypto_2844390.png" class="woox-icon" alt="bitcoin">
+									<h5 class="pricing-title">Litecoin <span>LTC</span></h5>
+								</div>
+							</td>
+							<td>
+								<div class="currency-details-item">
+									<h6 class="title">Market Cap:</h6>
+									<h6 class="value">$8.954.645.780 USD</h6>
+								</div>
+							</td>
+							<td>
+								<div class="currency-details-item">
+									<h6 class="title">Volume (24h):</h6>
+									<h6 class="value">$616.044.000 USD</h6>
+								</div>
+							</td>
+							<td>
+								<div class="currency-details-item">
+									<h6 class="title">Circulating Supply:</h6>
+									<h6 class="value">56.372.063 LTC</h6>
+								</div>
+							</td>
+							<td>
+								<div class="price">
+									<div class="price-sup-title">1 Bitcoin equals:</div>
+									<div class="price-value">$158.85</div>
+								</div>
+							</td>
+							<td>
+								<a href="005_coin_market.html" class="btn btn--large btn--dark-lighter btn--transparent">Buy Now!</a>
+							</td>
+						</tr>
+						<tr class="crumina-module crumina-pricing-table pricing-table--style-table c-blue-lighter">
+							<td>
+								<div class="pricing-thumb">
+									<img src="img/if_ripple_xrp_coin_2844396.png" class="woox-icon" alt="bitcoin">
+									<h5 class="pricing-title">Ripple <span>XRP</span></h5>
+								</div>
+							</td>
+							<td>
+								<div class="currency-details-item">
+									<h6 class="title">Market Cap:</h6>
+									<h6 class="value">$32.230.347.756 USD</h6>
+								</div>
+							</td>
+							<td>
+								<div class="currency-details-item">
+									<h6 class="title">Volume (24h):</h6>
+									<h6 class="value">$681.224.000 USD</h6>
+								</div>
+							</td>
+							<td>
+								<div class="currency-details-item">
+									<h6 class="title">Circulating Supply:</h6>
+									<h6 class="value">39.178.259.468 XRP</h6>
+								</div>
+							</td>
+							<td>
+								<div class="price">
+									<div class="price-sup-title">1 Bitcoin equals:</div>
+									<div class="price-value">$0.822659</div>
+								</div>
+							</td>
+							<td>
+								<a href="005_coin_market.html" class="btn btn--large btn--dark-lighter btn--transparent">Buy Now!</a>
+							</td>
+						</tr>
+						</tbody>
+							<tfoot>
+							<tr>
+								<td colspan="6">NOTE! Ullamcorper sit amet risus nullam. Ac ut consequat semper viverra. Tristique senectus et netus et malesuada fames ac turpis.</td>
+							</tr>
+							</tfoot>
+					</table>
+					</div>
+				</div>
+			</div>
+			<hr class="divider">
+		</div>
+	</section>
+
+	<section>
+		<div class="container">
+			<div class="row medium-padding120">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="mCustomScrollbar scrollable-responsive-table" data-mcs-theme="dark">
+						<table class="pricing-tables-wrap-table-blurring">
+						<thead>
+						<tr>
+							<th>#</th>
+							<th>Name</th>
+							<th>Market Cap</th>
+							<th>Price</th>
+							<th>Change</th>
+							<th>Circulating Supply</th>
+							<th>Payment Method</th>
+							<th></th>
+						</tr>
+						</thead>
+						<tbody>
+						<tr class="crumina-module crumina-pricing-table pricing-table--style-table-blurring c-brown">
+							<td>
+								1
+							</td>
+							<td>
+								<div class="pricing-thumb">
+									<img src="img/if_Bitcoin_2745023.png" class="woox-icon" alt="bitcoin">
+									<h6 class="pricing-title">Bitcoin <span>BTC</span></h6>
+								</div>
+							</td>
+							<td>
+								<div class="currency-details-item">
+									<div class="value">$171.559.166.785</div>
+								</div>
+							</td>
+							<td>
+								<div class="currency-details-item">
+									<div class="value c-primary">$10.163.30</div>
+								</div>
+							</td>
+							<td>
+								<div class="currency-details-item">
+									<div class="value c-green-succes">+ 25.94%</div>
+								</div>
+							</td>
+							<td>
+								<div class="currency-details-item">
+									<div class="value">16.880.262 BTC</div>
+								</div>
+							</td>
+							<td>
+								<div class="currency-details-item">
+									<div class="payment-method">
+										<img src="img/paypal.png" class="woox-icon" alt="paypal">
+										<img src="img/mastercard.png" class="woox-icon" alt="mastercard">
+										<img src="img/visa.png" class="woox-icon" alt="visa">
+									</div>
+								</div>
+							</td>
+							<td>
+								<a href="005_coin_market.html" class="btn btn--small btn--green-light">Buy Now</a>
+							</td>
+						</tr>
+						<tr class="crumina-module crumina-pricing-table pricing-table--style-table-blurring c-blue">
+							<td>
+								2
+							</td>
+							<td>
+								<div class="pricing-thumb">
+									<img src="img/if_etherium_eth_ethcoin_crypto_2844386.png" class="woox-icon" alt="bitcoin">
+									<h6 class="pricing-title">Ethereum <span>ETH</span></h6>
+								</div>
+							</td>
+							<td>
+								<div class="currency-details-item">
+									<div class="value">$80.266.577.723</div>
+								</div>
+							</td>
+							<td>
+								<div class="currency-details-item">
+									<div class="value c-primary">$857.17</div>
+								</div>
+							</td>
+							<td>
+								<div class="currency-details-item">
+									<div class="value c-red-light">- 4.22%</div>
+								</div>
+							</td>
+							<td>
+								<div class="currency-details-item">
+									<div class="value">97.790.573 ETH</div>
+								</div>
+							</td>
+							<td>
+								<div class="currency-details-item">
+									<div class="payment-method">
+										<img src="img/paypal.png" class="woox-icon" alt="paypal">
+										<img src="img/mastercard.png" class="woox-icon" alt="mastercard">
+										<img src="img/visa.png" class="woox-icon" alt="visa">
+									</div>
+								</div>
+							</td>
+							<td>
+								<a href="005_coin_market.html" class="btn btn--small btn--green-light">Buy Now</a>
+							</td>
+						</tr>
+						<tr class="crumina-module crumina-pricing-table pricing-table--style-table-blurring c-blue-light">
+							<td>
+								3
+							</td>
+							<td>
+								<div class="pricing-thumb">
+									<img src="img/if_dash_dashcoin_2844383.png" class="woox-icon" alt="bitcoin">
+									<h6 class="pricing-title">Dash <span>DASH</span></h6>
+								</div>
+							</td>
+							<td>
+								<div class="currency-details-item">
+									<div class="value">$4.964.598.370</div>
+								</div>
+							</td>
+							<td>
+								<div class="currency-details-item">
+									<div class="value c-primary">$641.33</div>
+								</div>
+							</td>
+							<td>
+								<div class="currency-details-item">
+									<div class="value c-green-succes">+ 3.86%</div>
+								</div>
+							</td>
+							<td>
+								<div class="currency-details-item">
+									<div class="value">7.901.482 DASH</div>
+								</div>
+							</td>
+							<td>
+								<div class="currency-details-item">
+									<div class="payment-method">
+										<img src="img/paypal.png" class="woox-icon" alt="paypal">
+										<img src="img/mastercard.png" class="woox-icon" alt="mastercard">
+										<img src="img/visa.png" class="woox-icon" alt="visa">
+									</div>
+								</div>
+							</td>
+							<td>
+								<a href="005_coin_market.html" class="btn btn--small btn--green-light">Buy Now</a>
+							</td>
+						</tr>
+						<tr class="crumina-module crumina-pricing-table pricing-table--style-table-blurring c-border-color">
+							<td>
+								4
+							</td>
+							<td>
+								<div class="pricing-thumb">
+									<img src="img/if_litecion_ltc_lite_coin_crypto_2844390.png" class="woox-icon" alt="bitcoin">
+									<h6 class="pricing-title">Litecoin <span>LTC</span></h6>
+								</div>
+							</td>
+							<td>
+								<div class="currency-details-item">
+									<div class="value">$11.868.672.826</div>
+								</div>
+							</td>
+							<td>
+								<div class="currency-details-item">
+									<div class="value c-primary">$214.45</div>
+								</div>
+							</td>
+							<td>
+								<div class="currency-details-item">
+									<div class="value c-red-light">- 0.58%</div>
+								</div>
+							</td>
+							<td>
+								<div class="currency-details-item">
+									<div class="value">55.345.483 LTC</div>
+								</div>
+							</td>
+							<td>
+								<div class="currency-details-item">
+									<div class="payment-method">
+										<img src="img/paypal.png" class="woox-icon" alt="paypal">
+										<img src="img/mastercard.png" class="woox-icon" alt="mastercard">
+										<img src="img/visa.png" class="woox-icon" alt="visa">
+									</div>
+								</div>
+							</td>
+							<td>
+								<a href="005_coin_market.html" class="btn btn--small btn--green-light">Buy Now</a>
+							</td>
+						</tr>
+						<tr class="crumina-module crumina-pricing-table pricing-table--style-table-blurring c-blue-lighter">
+							<td>
+								5
+							</td>
+							<td>
+								<div class="pricing-thumb">
+									<img src="img/if_ripple_xrp_coin_2844396.png" class="woox-icon" alt="bitcoin">
+									<h6 class="pricing-title">Ripple <span>XRP</span></h6>
+								</div>
+							</td>
+							<td>
+								<div class="currency-details-item">
+									<div class="value">$40.076.472.675</div>
+								</div>
+							</td>
+							<td>
+								<div class="currency-details-item">
+									<div class="value c-primary">$1.03</div>
+								</div>
+							</td>
+							<td>
+								<div class="currency-details-item">
+									<div class="value c-green-succes">+ 22.04%</div>
+								</div>
+							</td>
+							<td>
+								<div class="currency-details-item">
+									<div class="value">39.094.802.192 XRP</div>
+								</div>
+							</td>
+							<td>
+								<div class="currency-details-item">
+									<div class="payment-method">
+										<img src="img/paypal.png" class="woox-icon" alt="paypal">
+										<img src="img/mastercard.png" class="woox-icon" alt="mastercard">
+										<img src="img/visa.png" class="woox-icon" alt="visa">
+									</div>
+								</div>
+							</td>
+							<td>
+								<a href="005_coin_market.html" class="btn btn--small btn--green-light">Buy Now</a>
+							</td>
+						</tr>
+						<tr class="crumina-module crumina-pricing-table pricing-table--style-table-blurring c-blue-lighter">
+							<td>
+								6
+							</td>
+							<td>
+								<div class="pricing-thumb">
+									<img src="img/logo-primary.png" class="woox-icon" alt="woox">
+									<h6 class="pricing-title">Woox <span>WOOX</span></h6>
+								</div>
+							</td>
+							<td>
+								<div class="currency-details-item">
+									<div class="value">$672.826</div>
+								</div>
+							</td>
+							<td>
+								<div class="currency-details-item">
+									<div class="value c-primary">$0.09</div>
+								</div>
+							</td>
+							<td>
+								<div class="currency-details-item">
+									<div class="value c-red-light">- 1.3%</div>
+								</div>
+							</td>
+							<td>
+								<div class="currency-details-item">
+									<div class="value">485.678 WOOX</div>
+								</div>
+							</td>
+							<td>
+								<div class="currency-details-item">
+									<div class="payment-method">
+										<img src="img/paypal.png" class="woox-icon" alt="paypal">
+										<img src="img/mastercard.png" class="woox-icon" alt="mastercard">
+										<img src="img/visa.png" class="woox-icon" alt="visa">
+									</div>
+								</div>
+							</td>
+							<td>
+								<a href="005_coin_market.html" class="btn btn--small btn--green-light">Buy Now</a>
+							</td>
+						</tr>
+
+						</tbody>
+							<tfoot>
+							<tr>
+								<td colspan="8">NOTE! Ullamcorper sit amet risus nullam. Ac ut consequat semper viverra. Tristique senectus et netus et malesuada fames ac turpis.</td>
+							</tr>
+							</tfoot>
+					</table>
+					</div>
+				</div>
+			</div>
+			<hr class="divider">
+		</div>
+	</section>
+
+	<section>
+		<div class="container">
+			<div class="row medium-padding120">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="pricing-tables-modern-wrap">
+
+						<div class="crumina-module pricing-table--modern-main">
+							<header class="crumina-module crumina-heading heading--with-decoration heading--h4" data-mh="pricing-item-thumb">
+								<h4 class="heading-title">Choose your Coin</h4>
+							</header>
+							<div class="pricing-content" data-mh="pricing-item-content">
+								<ul class="pricing-tables-position">
+									<li class="position-item">
+										<div class="currency-details-item">
+											<h6 class="value">1 crypto coin equals:</h6>
+										</div>
+									</li>
+									<li class="position-item">
+										<div class="currency-details-item">
+											<h6 class="value">Market Cap:</h6>
+										</div>
+									</li>
+									<li class="position-item">
+										<div class="currency-details-item">
+											<h6 class="value">Volume (24h):</h6>
+										</div>
+									</li>
+									<li class="position-item">
+										<div class="currency-details-item">
+											<h6 class="value">Circulating Supply:</h6>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="crumina-module crumina-pricing-table pricing-table--modern c-brown">
+
+							<div class="pricing-thumb" data-mh="pricing-item-thumb">
+								<img src="img/if_Bitcoin_2745023.png" class="woox-icon" alt="bitcoin">
+								<h5 class="pricing-title">Bitcoin <span>BTC</span></h5>
+							</div>
+
+							<div class="pricing-content" data-mh="pricing-item-content">
+								<div class="price">
+									<div class="price-value">$9.635.34</div>
+								</div>
+
+								<ul class="pricing-tables-position">
+									<li class="position-item">
+										<div class="currency-details-item">
+											<h6 class="value">$163.936.272.151 USD</h6>
+										</div>
+									</li>
+									<li class="position-item">
+										<div class="currency-details-item">
+											<h6 class="value">$9.758.550.000 USD</h6>
+										</div>
+									</li>
+									<li class="position-item">
+										<div class="currency-details-item">
+											<h6 class="value">17.014.062 BTC</h6>
+										</div>
+									</li>
+								</ul>
+								<a href="005_coin_market.html" class="btn btn--large btn--primary btn--transparent">Buy Now</a>
+							</div>
+						</div>
+
+						<div class="crumina-module crumina-pricing-table pricing-table--modern c-blue">
+
+							<div class="pricing-thumb" data-mh="pricing-item-thumb">
+								<img src="img/if_etherium_eth_ethcoin_crypto_2844386.png" class="woox-icon" alt="bitcoin">
+								<h5 class="pricing-title">Ethereum <span>ETH</span></h5>
+							</div>
+							<div class="pricing-content" data-mh="pricing-item-content">
+								<div class="price">
+									<div class="price-value">$820.93</div>
+								</div>
+
+								<ul class="pricing-tables-position">
+									<li class="position-item">
+										<div class="currency-details-item">
+											<h6 class="value">$91.926.166.165 USD</h6>
+										</div>
+									</li>
+									<li class="position-item">
+										<div class="currency-details-item">
+											<h6 class="value">$2.323.180.000 USD</h6>
+										</div>
+									</li>
+									<li class="position-item">
+										<div class="currency-details-item">
+											<h6 class="value">97.730.789 ETH</h6>
+										</div>
+									</li>
+								</ul>
+								<a href="005_coin_market.html" class="btn btn--large btn--blue-light btn--transparent">Buy Now</a>
+							</div>
+						</div>
+
+						<div class="crumina-module crumina-pricing-table pricing-table--modern c-blue-light">
+
+							<div class="pricing-thumb" data-mh="pricing-item-thumb">
+								<img src="img/if_dash_dashcoin_2844383.png" class="woox-icon" alt="bitcoin">
+								<h5 class="pricing-title">Dash <span>DASH</span></h5>
+							</div>
+							<div class="pricing-content" data-mh="pricing-item-content">
+								<div class="price">
+									<div class="price-value">$494.43</div>
+								</div>
+
+								<ul class="pricing-tables-position">
+									<li class="position-item">
+										<div class="currency-details-item">
+											<h6 class="value">$3.980.830.982 USD</h6>
+										</div>
+									</li>
+									<li class="position-item">
+										<div class="currency-details-item">
+											<h6 class="value">$127.057.000 USD</h6>
+										</div>
+									</li>
+									<li class="position-item">
+										<div class="currency-details-item">
+											<h6 class="value">8.051.338 DASH</h6>
+										</div>
+									</li>
+								</ul>
+								<a href="005_coin_market.html" class="btn btn--large btn--green-light btn--transparent">Buy Now</a>
+							</div>
+						</div>
+
+						<div class="crumina-module crumina-pricing-table pricing-table--modern c-border-color">
+
+							<div class="pricing-thumb" data-mh="pricing-item-thumb">
+								<img src="img/if_litecion_ltc_lite_coin_crypto_2844390.png" class="woox-icon" alt="bitcoin">
+								<h5 class="pricing-title">Litecoin <span>LTC</span></h5>
+							</div>
+							<div class="pricing-content" data-mh="pricing-item-content">
+								<div class="price">
+									<div class="price-value">$158.85</div>
+								</div>
+
+								<ul class="pricing-tables-position">
+									<li class="position-item">
+										<div class="currency-details-item">
+											<h6 class="value">$8.954.645.780 USD</h6>
+										</div>
+									</li>
+									<li class="position-item">
+										<div class="currency-details-item">
+											<h6 class="value">$616.044.000 USD</h6>
+										</div>
+									</li>
+									<li class="position-item">
+										<div class="currency-details-item">
+											<h6 class="value">56.372.063 LTC</h6>
+										</div>
+									</li>
+								</ul>
+								<a href="005_coin_market.html" class="btn btn--large btn--dark-lighter btn--transparent">Buy Now</a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+
+
+<!-- Footer -->
+
+<footer id="site-footer" class="footer ">
+
+	<canvas id="can"></canvas>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-12 col-sm-offset-0 col-xs-12">
+				<div class="widget w-info">
+					<a href="index.html" class="site-logo">
+						<img src="img/logo-primary.png" alt="Woox">
+						<svg class="woox-icon" viewBox="0 0 481.448 101.996">
+							<path d="M152.514 14.926c0 2.1-1.339 4.593-2.1 7.081L126.3 89.366c-2.487 7.654-8.229 11.673-14.543 11.673-6.889 0-12.056-4.019-15.309-11.673L76.162 43.822 55.877 89.366c-3.253 7.654-8.994 11.673-15.309 11.673-6.7 0-12.056-4.019-14.543-11.673L2.1 22.007C1.148 19.519 0 17.031 0 14.926A14.213 14.213 0 0 1 14.352.574c5.358 0 11.1 3.062 12.821 8.037l15.5 49.18L62.575 9.76C65.063 3.827 69.655.574 76.162.574c6.7 0 11.29 3.253 13.778 9.186l19.71 48.031 15.692-49.18c1.531-4.593 7.271-8.037 12.821-8.037a14.212 14.212 0 0 1 14.351 14.352zM263.69 51.285c0 34.253-29.853 50.711-51.667 50.711-22.006 0-51.859-16.458-51.859-50.711C160.164 17.223 190.016 0 212.022 0c21.815 0 51.668 17.223 51.668 51.285zm-73.292 0c0 14.352 9.568 24.3 21.624 24.3 11.864 0 21.624-9.951 21.624-24.3 0-14.926-9.759-24.877-21.624-24.877-12.055 0-21.622 9.951-21.622 24.877zm190.974 0c0 34.253-29.853 50.715-51.672 50.715-22.006 0-51.858-16.458-51.858-50.711C277.845 17.223 307.7 0 329.7 0c21.819 0 51.672 17.223 51.672 51.285zm-73.291 0c0 14.352 9.567 24.3 21.623 24.3 11.865 0 21.624-9.951 21.624-24.3 0-14.926-9.759-24.877-21.624-24.877-12.056 0-21.623 9.951-21.623 24.877zm173.367 36.932c0 7.271-6.7 13.4-13.97 13.4-4.4 0-7.846-2.3-10.716-5.55l-21.05-24.686-21.05 24.686c-2.87 3.253-6.123 5.55-10.716 5.55-7.08 0-13.97-6.124-13.97-13.4a12.074 12.074 0 0 1 3.254-8.229l25.45-28.9-25.45-28.9a12.348 12.348 0 0 1-3.062-8.037c0-7.463 6.89-13.586 13.97-13.586a13.062 13.062 0 0 1 10.716 5.549L435.712 30.8l20.859-24.676c2.87-3.444 6.315-5.549 10.907-5.549 6.89 0 13.778 6.124 13.778 13.586a12.352 12.352 0 0 1-3.062 8.037l-25.451 28.9 25.451 28.9a11.252 11.252 0 0 1 3.254 8.219z" data-name="Слой 2" />
+						</svg>
+					</a>
+					<p>Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis. Vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra vulputate sapien nec sagittis aliquam bibendum.</p>
+				</div>
+
+				<div class="widget w-contacts">
+					<ul class="socials socials--white">
+						<li class="social-item">
+							<a href="#">
+								<i class="fab fa-twitter woox-icon"></i>
+							</a>
+						</li>
+
+						<li class="social-item">
+							<a href="#">
+								<i class="fab fa-dribbble woox-icon"></i>
+							</a>
+						</li>
+
+						<li class="social-item">
+							<a href="#">
+								<i class="fab fa-instagram woox-icon"></i>
+							</a>
+						</li>
+
+						<li class="social-item">
+							<a href="#">
+								<i class="fab fa-linkedin-in woox-icon"></i>
+							</a>
+						</li>
+
+						<li class="social-item">
+							<a href="#">
+								<i class="fab fa-facebook-square woox-icon"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="sub-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-12 col-sm-offset-0 col-xs-12">
+
+					<span>© All right reserved 2018.</span>
+					<span><a href="index.html">The Woox</a> - ICO and Cryptocurrency Website PSD Template.</span>
+
+					<div class="logo-design">
+						<img src="img/logo-fire.png" alt="ThemeFire">
+						<div class="design-wrap">
+							<div class="sup-title">designed by</div>
+							<a href="https://themeforest.net/user/themefire/portfolio" class="logo-title">themefire</a>
+						</div>
+					</div>
+
+					<div class="logo-design logo-design-crumina">
+						<img src="img/crumina-logo.png" alt="Crumina">
+						<div class="design-wrap">
+							<div class="sup-title">developed by</div>
+							<a href="https://crumina.net/" class="logo-title">Crumina</a>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<a class="back-to-top" href="#">
+		<svg class="woox-icon icon-top-arrow">
+			<use xlink:href="#icon-top-arrow"></use>
+		</svg>
+	</a>
+</footer>
+
+<!-- ... end Footer -->
+
+
+<script src="js/method-assign.js"></script>
+
+<!-- jQuery first, then Other JS. -->
+
+<script src="js/jquery-3.3.1.js"></script>
+
+<script src="js/js-plugins/leaflet.js"></script>
+<script src="js/js-plugins/MarkerClusterGroup.js"></script>
+<script src="js/js-plugins/crum-mega-menu.js"></script>
+<script src="js/js-plugins/waypoints.js"></script>
+<script src="js/js-plugins/jquery-circle-progress.js"></script>
+<script src="js/js-plugins/segment.js"></script>
+<script src="js/js-plugins/bootstrap.js"></script>
+<script src="js/js-plugins/imagesLoaded.js"></script>
+<script src="js/js-plugins/jquery.matchHeight.js"></script>
+<script src="js/js-plugins/jquery-countTo.js"></script>
+<script src="js/js-plugins/Headroom.js"></script>
+<script src="js/js-plugins/jquery.magnific-popup.js"></script>
+<script src="js/js-plugins/popper.min.js"></script>
+<script src="js/js-plugins/particles.js"></script>
+<script src="js/js-plugins/perfect-scrollbar.js"></script>
+<script src="js/js-plugins/jquery.datetimepicker.full.js"></script>
+<script src="js/js-plugins/svgxuse.js"></script>
+<script src="js/js-plugins/select2.js"></script>
+<script src="js/js-plugins/smooth-scroll.js"></script>
+<script src="js/js-plugins/sharer.js"></script>
+<script src="js/js-plugins/isotope.pkgd.min.js"></script>
+<script src="js/js-plugins/ajax-pagination.js"></script>
+<script src="js/js-plugins/swiper.min.js"></script>
+<script src="js/js-plugins/material.min.js"></script>
+<script src="js/js-plugins/orbitlist.js"></script>
+<script src="js/js-plugins/highstock.js"></script>
+<script src="js/js-plugins/bootstrap-datepicker.js"></script>
+<script src="js/js-plugins/TimeCircles.js"></script>
+<script src="js/js-plugins/ion.rangeSlider.js"></script>
+
+<!-- FontAwesome 5.x.x JS -->
+
+<script defer src="fonts/fontawesome-all.js"></script>
+
+<script src="js/main.js"></script>
+
+<!-- SVG icons loader -->
+<script src="js/svg-loader.js"></script>
+<!-- /SVG icons loader -->
+
+</body>
+</html>

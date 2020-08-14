@@ -16,7 +16,7 @@
   .crumina-heading .heading-sup-title {
     letter-spacing: 5px; }
   .crumina-heading.heading--with-decoration .heading-title:after {
-    content: ".";
+    content: "";
     font-size: inherit;
     color: #ffba00;
     width: 0;

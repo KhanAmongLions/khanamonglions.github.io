@@ -642,7 +642,7 @@
 
 						
 						<div class="form-group label-floating">
-								<label class="input-label control-label">Enter each receiving Eth address, a space, and the number of tokens to be received. Use a new line for each wallet.</label>
+								<label class="input-label control-label">Enter ETH address and amount of ETH sent per wallet.</label>
 								<textarea name="message" class="form-control input--squared input--dark height-170" placeholder=""></textarea>
 						</div>
 
@@ -700,9 +700,10 @@
 										<p>1. Find the contract address for the token you wish to dstribute.</p>
 										<p>2. Copy and paste it into the "Token Contract" field in the correct format.</p>
 										<p>3. Click the approve button and fire the transaction and wait for it to confirm.</p>
-										<p>4. Enter each wallet you would like to send tokens to, follwed by a space and the number of tokens to be received.</p>
-										<p>5. Use a new line for each wallet address and its respective token share.</p>
+										<p>4. Enter each wallet you would like to send tokens to, follwed by a space and the amount of ETH the wallet sent to you for the OTC.</p>
+										<p>5. Use a new line for each wallet address and its respective amount of ETH.</p>
 										<p>6. Input the total number of tokens that you are distributing as a collective total.</p>
+										<p>7. The disTRIBUTE dapp will calculate each wallets share of tokens according to the formula (ETH FROM WALLET/TOTAL ETH SUM).</p>
 										<p>7. Click the DISTRIBUTE button and fire off the transaction.</p>
 										<p>8. All tokens should be distributed accordingly once the transaction confirms.</p>
 										<p>9. Check on etherscan to confirm the distribution was successful.</p>

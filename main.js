@@ -167,7 +167,13 @@ function distribute2(){
     //Number(tokensToDistribute)*(10**tokenDecimals)
     tokensToDistribute=web3.utils.toBN(tokensToDistribute).mul(web3.utils.toBN(10**tokenDecimals))//web3.utils.toWei(tokensToDistribute,'ether')
     var text=document.getElementById('relativeShares').value
+    console.log('.aeigroaejrgo')
     var values=processTextValues(text)
+    console.log('.aeigroaejrgo2')
+    if(!values){
+      alert('check your text formatting, one comma per line etc')
+      return null;
+    }
     if(values.addresses.length!=values.amounts.length){
       alert('mismatch in address/amount counts')
       return null;
@@ -184,7 +190,11 @@ function processTextValues(text){
   var amounts=[]
   var total=web3.utils.toBN(0)
   for(var i=0;i<lines.length;i++){
-    var parts=lines[i].split(' ')
+    var count = (lines[i].match(/,/g) || []).length;
+    if(count!=1){
+      return null;
+    }
+    var parts=lines[i].split(',')
     addresses.push(parts[0])
     var weivalue=web3.utils.toWei(parts[1]+'','ether')
     amounts.push(weivalue)

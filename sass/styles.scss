@@ -7,5 +7,13 @@
 }
 
 .main-section {
-    min-height: auto;
+    min-height: 100vh;
+}
+
+.crumina-flying-balls:after, .crumina-flying-balls:before {
+    visibility: hidden;
+}
+
+.particles-js-canvas-el{
+    min-height: 107%;
 }

@@ -12,6 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="css/blocks.css">
 	<link rel="stylesheet" type="text/css" href="css/widgets.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700i,900," rel="stylesheet">
 
@@ -523,12 +524,7 @@
 	</section>
 
 	<section data-settings="particles-1" class="main-section crumina-flying-balls particles-js bg-1 medium-padding120 responsive-align-center">
-		<div class="container">
-			<div class="row pt80">
-
-				<div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-12 col-sm-offset-0 col-xs-12">
-
-
+		<div class="container" id="formContainer">
 					<form class="register-form form--dark" onsubmit="return false;">
 						<header class="crumina-module crumina-heading heading--h2 heading--with-decoration">
 							<h2 class="heading-title">disTRIBUTE</h2>
@@ -538,44 +534,33 @@
 							<label class="input-label control-label">Token Contract <abbr class="required" title="required">*</abbr></label>
 							<input id="tokenAddress" class="form-control input--squared input--dark" name="name" type="text">
 						</div>
-						<div class="form-group label-floating is-empty">
+						<div class="form-group label-floating is-empty spacing">
 							Token Name:
 							<span id="tokenName">?</span>
 						</div>
-						<div class="form-group label-floating is-empty">
+						<div class="form-group label-floating is-empty spacing">
 							Your Tokens:
 							<span id="tokenBalance">?</span>
 						</div>
-						<div class="form-group label-floating is-empty">
+						<div class="form-group label-floating is-empty spacing">
 							Decimals:
 							<span id="tokenDecimals">?</span>
 						</div>
-						<button id="approveButton" class="btn btn--large btn--green-light btn--with-icon btn--icon-right full-width">
+						<button id="approveButton" class="btn btn--large btn--green-light btn--with-icon btn--icon-right full-width spacing">
 							Approve Tokens
 							<svg class="woox-icon icon-arrow-right"><use xlink:href="#icon-arrow-right"></use></svg>
 						</button>
 
 
 						<div class="form-group label-floating">
-								<label class="input-label control-label">Enter ETH address and amount of ETH sent per wallet.</label>
-								<textarea id="relativeShares" name="message" class="form-control input--squared input--dark height-170" placeholder=""></textarea>
+								<textarea id="relativeShares" name="message" class="form-control input--squared input--dark height-170" placeholder="Enter ETH address and amount of ETH sent per wallet."></textarea>
 						</div>
 						<br>
-				    Tokens to distribute:
+				    <div class="spacing">Tokens to distribute:</div>
 				    <input id="tokenstodistribute" type="number"/>
 				    <br>
 						<button id="distribute" class="btn btn--large btn--primary full-width">Distribute Tokens</button>
-
-
 					</form>
-				</div>
-
-
-
-
-			</div>
-
-
 		</div>
 	</section>
 
@@ -613,7 +598,7 @@
 						<div class="tab-content">
 							<div role="tabpanel" class="tab-pane fade active" id="tab-25">
 								<div class="row">
-									<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+									<div class="col-xs-12">
 										<h4 class="tab-content-title">Instructions</h4>
 										<p>1. Find the contract address for the token you wish to dstribute.</p>
 										<p>2. Copy and paste it into the "Token Contract" field in the correct format.</p>
@@ -626,7 +611,7 @@
 										<p>8. All tokens should be distributed accordingly once the transaction confirms.</p>
 										<p>9. Check on etherscan to confirm the distribution was successful.</p>
 									</div>
-									<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+									<div class="col-xs-12">
 										<img class="block-rounded" src="https://i1.wp.com/trendintech.com/wp-content/uploads/2017/09/how-to-watch-the-most-incredible-meteor-shower-of-the-year.jpg?fit=3531%2C2648" alt="image">
 									</div>
 								</div>
